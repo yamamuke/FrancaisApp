@@ -1,0 +1,143 @@
+div {
+  margin: 20px;
+}
+
+.category {
+  color: yellowgreen;
+}
+
+.table {
+  height: 60px;
+  display: table;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 2px solid green;
+  width: 800px !important;
+  text-align: center;
+}
+
+#tbl_accent {
+  margin-right: 0 !important;
+  width: 320px;
+  height: 200px;
+  text-align: center;
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+table th {
+  display: table-cell;
+  vertical-align: middle;
+  border: 1px solid green;
+  padding: 3px;
+}
+
+table td {
+  border: 1px solid green;
+  padding: 3px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.explanation {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+#start {
+  background-color: lightblue;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#answer {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(9, 117, 241, 0.26);
+  font-size: 25px;
+  font-weight: bold; 
+}
+
+#answer:active {
+  background-color: blue;
+}
+
+#next {
+  margin: 50px 20px 0 20px !important;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.fs20 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#verb {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.center {
+  text-align: center;
+  margin: 0 !important;
+}
+
+.right {
+  text-align: right;
+}
+
+input {
+  font-size: 20px;
+  text-align: center;
+  border: solid 2px blue;
+  width: 200px;
+  height: 30px;
+}
+
+.flex {
+  display: flex;
+  margin: 0 !important;
+  font-weight: bold;
+}
+
+#result {
+  width: 300px;
+  height: 100px;
+  margin: 150px 20px 0 20px !important;
+  text-align: center;
+}
+
+.result {
+  font-size: 40px;
+  color: red
+}
+
+.wrong {
+  font-size: 20px;
+}
+
+#score {
+  margin: 0 auto;
+  width: 200px;
+  font-size: 25px;
+  color: green
+}
+
+#reload {
+  font-size: 15px;
+  display: none;
+}
+
+.caution {
+  font-size: 15px;
+}
