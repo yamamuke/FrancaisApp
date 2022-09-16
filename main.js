@@ -1243,7 +1243,7 @@ function getCorrect() {
       } else if (type.textContent === '接続法(queから入力)') {
         return 'qu\'ils restent';
       } else if (type.textContent === '条件法') {
-        return 'resteraient';
+        return 'ils resteraient';
       }
     }
   //parler
