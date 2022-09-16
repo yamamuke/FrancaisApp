@@ -1,7 +1,7 @@
-const verbList = ['avoir','être','faire','prendre','finir','regarder','devoir'];
+const verbList = ['avoir','être','faire','prendre','finir','regarder','devoir','aller'];
 const verbList_backup = [
-  'savoir', 'aller','parler', 'manger', 'comprendre','dormir',
-  'marcher', 'apprendre'
+  'savoir', 'parler', 'manger', 'comprendre','dormir',
+  'marcher', 'apprendre', 'arriver', 'rentrer', 'rester', 'revenir', 'tomber'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
 const subjectList2 = ['tu', 'nous', 'vous'];
@@ -892,6 +892,123 @@ function getCorrect() {
         return 'ils devraient';
       }
     }
+//aller
+} else if (verb.textContent === 'aller') {
+  if (subject.textContent === 'je') {
+    if (type.textContent === '直接法') {
+      if (tense.textContent === '現在') {
+        return 'je vais';
+      } else if (tense.textContent === '複合過去') {
+        return 'jesuis allé';
+      } else if (tense.textContent === '半過去') {
+        return 'je devais';
+      } else if (tense.textContent === '大過去') {
+        return 'j\'avais dû';
+      } else if (tense.textContent === '単純未来') {
+        return 'je devrai';
+      }
+    } else if (type.textContent === '接続法(queから入力)') {
+      return 'que je doive';
+    } else if (type.textContent === '条件法') {
+      return 'je devrais';
+    }
+  } else if (subject.textContent === 'tu') {
+    if (type.textContent === '直接法') {
+      if (tense.textContent === '現在') {
+        return 'tu dois';
+      } else if (tense.textContent === '複合過去') {
+        return 'tu as dû';
+      } else if (tense.textContent === '半過去') {
+        return 'tu devais';
+      } else if (tense.textContent === '大過去') {
+        return 'tu avais dû';
+      } else if (tense.textContent === '単純未来') {
+        return 'tu devras';
+      }
+    } else if (type.textContent === '接続法(queから入力)') {
+      return 'que tu doives';
+    } else if (type.textContent === '条件法') {
+      return 'tu devrais';
+    } else if (type.textContent === '命令法') {
+      return 'dois'
+    }
+  } else if (subject.textContent === 'il') {
+    if (type.textContent === '直接法') {
+      if (tense.textContent === '現在') {
+        return 'il doit';
+      } else if (tense.textContent === '複合過去') {
+        return 'il a dû';
+      } else if (tense.textContent === '半過去') {
+        return 'il devait';
+      } else if (tense.textContent === '大過去') {
+        return 'il avait dû';
+      } else if (tense.textContent === '単純未来') {
+        return 'il devra';
+      }
+    } else if (type.textContent === '接続法(queから入力)') {
+      return 'qu\'il doive';
+    } else if (type.textContent === '条件法') {
+      return 'il devrait';
+    }
+  } else if (subject.textContent === 'nous') {
+    if (type.textContent === '直接法') {
+      if (tense.textContent === '現在') {
+        return 'nous devons';
+      } else if (tense.textContent === '複合過去') {
+        return 'nous avons dû';
+      } else if (tense.textContent === '半過去') {
+        return 'nous devions';
+      } else if (tense.textContent === '大過去') {
+        return 'nous avions dû';
+      } else if (tense.textContent === '単純未来') {
+        return 'nous devrons';
+      }
+    } else if (type.textContent === '接続法(queから入力)') {
+      return 'que nous devions';
+    } else if (type.textContent === '条件法') {
+      return 'nous devrions';
+    } else if (type.textContent === '命令法') {
+      return 'devons';
+    }
+  } else if (subject.textContent === 'vous') {
+    if (type.textContent === '直接法') {
+      if (tense.textContent === '現在') {
+        return 'vous devez';
+      } else if (tense.textContent === '複合過去') {
+        return 'vous avez dû';
+      } else if (tense.textContent === '半過去') {
+        return 'vous deviez';
+      } else if (tense.textContent === '大過去') {
+        return 'vous aviez dû';
+      } else if (tense.textContent === '単純未来') {
+        return 'vous devrez';
+      }
+    } else if (type.textContent === '接続法(queから入力)') {
+      return 'que vous deviez';
+    } else if (type.textContent === '条件法') {
+      return 'vous devriez';
+    } else if (type.textContent === '命令法') {
+      return 'devez';
+    }
+  } else if (subject.textContent === 'ils') {
+    if (type.textContent === '直接法') {
+      if (tense.textContent === '現在') {
+        return 'ils doivent';
+      } else if (tense.textContent === '複合過去') {
+        return 'ils ont dû';
+      } else if (tense.textContent === '半過去') {
+        return 'ils devaient';
+      } else if (tense.textContent === '大過去') {
+        return 'ils avaient dû';
+      } else if (tense.textContent === '単純未来') {
+        return 'ils devront';
+      }
+    } else if (type.textContent === '接続法(queから入力)') {
+      return 'qu\'ils doivent';
+    } else if (type.textContent === '条件法') {
+      return 'ils devraient';
+    }
+
   } else {
     return 'error';
   }

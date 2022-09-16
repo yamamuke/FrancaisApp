@@ -41,10 +41,8 @@ h1 {
   font-size: 30px;
 }
 
-.explanation {
-  font-size: 20px;
-  font-weight: bold;
-  color: blue;
+.float-left {
+  float: left;
 }
 
 .mt20 {
@@ -93,7 +91,8 @@ h1 {
   margin: 0 !important;
 }
 
-.right {
+.back-top {
+  margin: 0 40px 0 0;
   text-align: right;
 }
 
@@ -185,4 +184,12 @@ input {
 
 #right {
   justify-content: end;
+}
+
+ul {
+  display: inline-block;
+}
+
+li {
+  text-align: left;
 }
