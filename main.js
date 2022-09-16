@@ -3,7 +3,7 @@ const verbList_backup = [
   'savoir', 'aller','parler', 'manger', 'comprendre','dormir',
   'marcher', 'apprendre'
 ];
-const subjectList = ['je', 'tu', 'il/elle(ilで入力)', 'nous', 'vous', 'ils/elles(ilsで入力)'];
+const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
 const subjectList2 = ['tu', 'nous', 'vous'];
 const typeList = ['直接法', '条件法', '接続法(queから入力)', '命令法'];
 const tenseList = ['現在', '複合過去', '半過去', '大過去', '単純未来'];
@@ -38,6 +38,19 @@ let randomTense = Math.floor(Math.random() * tenseList.length);
 //     $('#subject').text(subjectList[randomSubject]);
 //   }
 // }
+
+let accent;
+let input;
+
+//アクサン表からクリック入力
+$(function() {
+  $('td').on('click', function() {
+    accent = $(this).text();
+    input = String($('#input').val());
+    $('#input').val(input + accent);
+    $('#input').focus();
+  });
+});
 
 //1問目の表示
 verb.textContent = verbList[Math.floor(Math.random() * verbList.length)];
@@ -98,7 +111,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'aie'
       }
-    } else if (subject.textContent === 'il/elle(ilで入力)') {
+    } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'il a';
@@ -156,7 +169,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'ayez'
       }
-    } else if (subject.textContent === 'ils/elles(ilsで入力)') {
+    } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'ils ont';
@@ -215,7 +228,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'sois'
       }
-    } else if (subject.textContent === 'il/elle(ilで入力)') {
+    } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'il est';
@@ -273,7 +286,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'soyez'
       }
-    } else if (subject.textContent === 'ils/elles(ilsで入力)') {
+    } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'ils sont';
@@ -332,7 +345,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'fais'
       }
-    } else if (subject.textContent === 'il/elle(ilで入力)') {
+    } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'il fait';
@@ -390,7 +403,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'faites'
       }
-    } else if (subject.textContent === 'ils/elles(ilsで入力)') {
+    } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'ils font';
@@ -449,7 +462,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'prends'
       }
-    } else if (subject.textContent === 'il/elle(ilで入力)') {
+    } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'il prend';
@@ -507,7 +520,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'prenez'
       }
-    } else if (subject.textContent === 'ils/elles(ilsで入力)') {
+    } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'ils prennent';
@@ -566,7 +579,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'finis'
       }
-    } else if (subject.textContent === 'il/elle(ilで入力)') {
+    } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'il finit';
@@ -623,8 +636,10 @@ function getCorrect() {
         return 'vous finiriez';
       } else if (type.textContent === '命令法') {
         return 'finissez';
+      } else if (type.textContent === '命令法') {
+        return 'finissez-vous';
       }
-    } else if (subject.textContent === 'ils/elles(ilsで入力)') {
+    } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'ils finissent';
@@ -683,7 +698,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'regarde'
       }
-    } else if (subject.textContent === 'il/elle(ilで入力)') {
+    } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'il regarde';
@@ -741,7 +756,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'regardez';
       }
-    } else if (subject.textContent === 'ils/elles(ilsで入力)') {
+    } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'ils fregardent';
@@ -800,7 +815,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'dois'
       }
-    } else if (subject.textContent === 'il/elle(ilで入力)') {
+    } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'il doit';
@@ -858,7 +873,7 @@ function getCorrect() {
       } else if (type.textContent === '命令法') {
         return 'devez';
       }
-    } else if (subject.textContent === 'ils/elles(ilsで入力)') {
+    } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
           return 'ils doivent';
@@ -886,6 +901,18 @@ function getCorrect() {
 let correctAns = getCorrect();
 let score = 0;
 
+//正解判定
+function pass() {
+  score++;
+  $('.result').text('正解');
+  $('.wrong').text('');
+};
+//正解表示
+function showCorrect() {
+  $('.result').text('不正解');
+  $('.wrong').text('正解は: ' + correctAns);
+};
+
 //解答ボタンを押したときの処理
 $(function() {
   $('#answer').on('click', function() {
@@ -895,14 +922,29 @@ $(function() {
     console.log(verb.textContent );
     console.log(subject.textContent);
     console.log(type.textContent);
-    console.log(tense.textContent);
-    if ($('#input').val() === correctAns) {
-      score++;
-      $('.result').text('正解');
-      $('.wrong').text('');
+    console.log(tense.textContent)
+    if (type.textContent === '命令法') {
+      if (subject.textContent === 'tu') {
+        if ($('#input').val().toLowerCase() === correctAns ||
+          $('#input').val().toLowerCase() === `${correctAns}-toi`) {
+          pass();
+        } else {
+          showCorrect();
+        }
+      } else {
+        if ($('#input').val().toLowerCase() === correctAns ||
+          $('#input').val().toLowerCase() === `${correctAns}-${subject.textContent}`) {
+          pass();
+        } else {
+          showCorrect();
+        }
+      }
     } else {
-      $('.result').text('不正解');
-      $('.wrong').text('正解は: ' + correctAns);
+      if ($('#input').val().toLowerCase() === correctAns) {
+        pass();
+      } else {
+        showCorrect();
+      }
     }
     if (qnumber === 20) {
       $('#answer').css('display', 'none');
@@ -911,7 +953,7 @@ $(function() {
       $('#reload').css('display', 'block');
     }
   });
-});
+});  
 
 //次の問題ボタンを押したときの処理
 $(function() {

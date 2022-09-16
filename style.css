@@ -88,12 +88,29 @@ h1 {
 }
 
 .center {
+  width: 500px;
   text-align: center;
   margin: 0 !important;
 }
 
 .right {
   text-align: right;
+}
+
+#question {
+  font-size: 20px;
+}
+
+#subject {
+  text-decoration: underline;
+}
+
+#type {
+  text-decoration: underline;
+}
+
+#tense {
+  text-decoration: underline;
 }
 
 input {
@@ -112,7 +129,7 @@ input {
 
 #result {
   width: 300px;
-  height: 100px;
+  height: 200px;
   margin: 150px 20px 0 20px !important;
   text-align: center;
 }
@@ -140,4 +157,32 @@ input {
 
 .caution {
   font-size: 15px;
+}
+
+#tbl_accent th {
+  width: 20px;
+  height: 10px;
+  font-size: 15px;
+}
+
+#small {
+  font-size: 10px;
+}
+
+#tbl_accent td {
+  width: 20px;
+  height: 10px;
+}
+
+#tbl_accent td:active {
+  color: #7fb7da;
+	font-size: 129%;
+}
+
+#tbl_accent th {
+  background-color: lightgray;
+}
+
+#right {
+  justify-content: end;
 }
