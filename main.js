@@ -1277,14 +1277,14 @@ function getCorrect() {
         } else if (tense.textContent === '大過去') {
           return 'tu avais parlé';
         } else if (tense.textContent === '単純未来') {
-          return 'tu parlera';
+          return 'tu parleras';
         }
       } else if (type.textContent === '接続法(queから入力)') {
         return 'que tu parles';
       } else if (type.textContent === '条件法') {
         return 'tu parlerais';
       } else if (type.textContent === '命令法') {
-        return 'parlez'
+        return 'parle'
       }
     } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
