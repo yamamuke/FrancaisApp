@@ -1,7 +1,10 @@
-const verbList = ['avoir','être','faire','prendre','finir','regarder','devoir','aller'];
+const verbList = [
+  'avoir','être','faire','prendre','finir','regarder','devoir','aller',
+  'arriver','rester','parler'
+];
 const verbList_backup = [
-  'savoir', 'parler', 'manger', 'comprendre','dormir',
-  'marcher', 'apprendre', 'arriver', 'rentrer', 'rester', 'revenir', 'tomber'
+  'savoir', 'manger', 'comprendre','dormir',
+  'marcher', 'apprendre', 'rentrer', 'revenir', 'tomber'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
 const subjectList2 = ['tu', 'nous', 'vous'];
@@ -892,123 +895,474 @@ function getCorrect() {
         return 'ils devraient';
       }
     }
-//aller
-} else if (verb.textContent === 'aller') {
-  if (subject.textContent === 'je') {
-    if (type.textContent === '直接法') {
-      if (tense.textContent === '現在') {
-        return 'je vais';
-      } else if (tense.textContent === '複合過去') {
-        return 'jesuis allé';
-      } else if (tense.textContent === '半過去') {
-        return 'je devais';
-      } else if (tense.textContent === '大過去') {
-        return 'j\'avais dû';
-      } else if (tense.textContent === '単純未来') {
-        return 'je devrai';
+  //aller
+  } else if (verb.textContent === 'aller') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je vais';
+        } else if (tense.textContent === '複合過去') {
+          return 'jesuis allé';
+        } else if (tense.textContent === '半過去') {
+          return 'j\'allais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais allé';
+        } else if (tense.textContent === '単純未来') {
+          return 'j\'irai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que j\'aille';
+      } else if (type.textContent === '条件法') {
+        return 'j\'irais';
       }
-    } else if (type.textContent === '接続法(queから入力)') {
-      return 'que je doive';
-    } else if (type.textContent === '条件法') {
-      return 'je devrais';
-    }
-  } else if (subject.textContent === 'tu') {
-    if (type.textContent === '直接法') {
-      if (tense.textContent === '現在') {
-        return 'tu dois';
-      } else if (tense.textContent === '複合過去') {
-        return 'tu as dû';
-      } else if (tense.textContent === '半過去') {
-        return 'tu devais';
-      } else if (tense.textContent === '大過去') {
-        return 'tu avais dû';
-      } else if (tense.textContent === '単純未来') {
-        return 'tu devras';
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu vas';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es allé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu allais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais allé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu iras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu ailles';
+      } else if (type.textContent === '条件法') {
+        return 'tu irais';
+      } else if (type.textContent === '命令法') {
+        return 'va'
       }
-    } else if (type.textContent === '接続法(queから入力)') {
-      return 'que tu doives';
-    } else if (type.textContent === '条件法') {
-      return 'tu devrais';
-    } else if (type.textContent === '命令法') {
-      return 'dois'
-    }
-  } else if (subject.textContent === 'il') {
-    if (type.textContent === '直接法') {
-      if (tense.textContent === '現在') {
-        return 'il doit';
-      } else if (tense.textContent === '複合過去') {
-        return 'il a dû';
-      } else if (tense.textContent === '半過去') {
-        return 'il devait';
-      } else if (tense.textContent === '大過去') {
-        return 'il avait dû';
-      } else if (tense.textContent === '単純未来') {
-        return 'il devra';
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il va';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est allé';
+        } else if (tense.textContent === '半過去') {
+          return 'il allait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était allé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il ira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il aille';
+      } else if (type.textContent === '条件法') {
+        return 'il irait';
       }
-    } else if (type.textContent === '接続法(queから入力)') {
-      return 'qu\'il doive';
-    } else if (type.textContent === '条件法') {
-      return 'il devrait';
-    }
-  } else if (subject.textContent === 'nous') {
-    if (type.textContent === '直接法') {
-      if (tense.textContent === '現在') {
-        return 'nous devons';
-      } else if (tense.textContent === '複合過去') {
-        return 'nous avons dû';
-      } else if (tense.textContent === '半過去') {
-        return 'nous devions';
-      } else if (tense.textContent === '大過去') {
-        return 'nous avions dû';
-      } else if (tense.textContent === '単純未来') {
-        return 'nous devrons';
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous allons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes allés';
+        } else if (tense.textContent === '半過去') {
+          return 'nous allions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions allés';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous irons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous allions';
+      } else if (type.textContent === '条件法') {
+        return 'nous irions';
+      } else if (type.textContent === '命令法') {
+        return 'allons';
       }
-    } else if (type.textContent === '接続法(queから入力)') {
-      return 'que nous devions';
-    } else if (type.textContent === '条件法') {
-      return 'nous devrions';
-    } else if (type.textContent === '命令法') {
-      return 'devons';
-    }
-  } else if (subject.textContent === 'vous') {
-    if (type.textContent === '直接法') {
-      if (tense.textContent === '現在') {
-        return 'vous devez';
-      } else if (tense.textContent === '複合過去') {
-        return 'vous avez dû';
-      } else if (tense.textContent === '半過去') {
-        return 'vous deviez';
-      } else if (tense.textContent === '大過去') {
-        return 'vous aviez dû';
-      } else if (tense.textContent === '単純未来') {
-        return 'vous devrez';
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous allez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes allé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous alliez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez allé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous irez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous alliez';
+      } else if (type.textContent === '条件法') {
+        return 'vous iriez';
+      } else if (type.textContent === '命令法') {
+        return 'allez';
       }
-    } else if (type.textContent === '接続法(queから入力)') {
-      return 'que vous deviez';
-    } else if (type.textContent === '条件法') {
-      return 'vous devriez';
-    } else if (type.textContent === '命令法') {
-      return 'devez';
-    }
-  } else if (subject.textContent === 'ils') {
-    if (type.textContent === '直接法') {
-      if (tense.textContent === '現在') {
-        return 'ils doivent';
-      } else if (tense.textContent === '複合過去') {
-        return 'ils ont dû';
-      } else if (tense.textContent === '半過去') {
-        return 'ils devaient';
-      } else if (tense.textContent === '大過去') {
-        return 'ils avaient dû';
-      } else if (tense.textContent === '単純未来') {
-        return 'ils devront';
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils vont';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont allés';
+        } else if (tense.textContent === '半過去') {
+          return 'ils allaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient allés';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils iront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils aillent';
+      } else if (type.textContent === '条件法') {
+        return 'ils iraient';
       }
-    } else if (type.textContent === '接続法(queから入力)') {
-      return 'qu\'ils doivent';
-    } else if (type.textContent === '条件法') {
-      return 'ils devraient';
     }
-
+  //arriver
+  } else if (verb.textContent === 'arriver') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'j\'arrive';
+        } else if (tense.textContent === '複合過去') {
+          return 'Je suis arrivé';
+        } else if (tense.textContent === '半過去') {
+          return 'j\'arrivais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais arrivé';
+        } else if (tense.textContent === '単純未来') {
+          return 'j\'arriverai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que j\'arrive';
+      } else if (type.textContent === '条件法') {
+        return 'j\'arriverais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu arrives';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es arrivé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu arrivais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais arrivé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu arriveras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu arrives';
+      } else if (type.textContent === '条件法') {
+        return 'tu arriverais';
+      } else if (type.textContent === '命令法') {
+        return 'arrive'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il arrive';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est arrivé';
+        } else if (tense.textContent === '半過去') {
+          return 'il arrivait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était arrivé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il arrivera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il arrive';
+      } else if (type.textContent === '条件法') {
+      return 'il arriverait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous arrivons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes arrivés';
+        } else if (tense.textContent === '半過去') {
+          return 'nous arrivions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions arrivés';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous arriverons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous arrivions';
+      } else if (type.textContent === '条件法') {
+        return 'nous arriverions';
+      } else if (type.textContent === '命令法') {
+        return 'arrivons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous arrivez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes arrivé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous arriviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez arrivé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous arriverez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous arriviez';
+      } else if (type.textContent === '条件法') {
+        return 'vous arriveriez';
+      } else if (type.textContent === '命令法') {
+        return 'arrivez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils arrivent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont arrivés';
+        } else if (tense.textContent === '半過去') {
+          return 'ils arrivaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient arrivés';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils arriveront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils arrivent';
+      } else if (type.textContent === '条件法') {
+        return 'ils arriveraient';
+      }
+    }
+  //rester
+  } else if (verb.textContent === 'rester') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je reste';
+        } else if (tense.textContent === '複合過去') {
+          return 'Je suis resté';
+        } else if (tense.textContent === '半過去') {
+          return 'je restais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais resté';
+        } else if (tense.textContent === '単純未来') {
+          return 'je resterai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je reste';
+      } else if (type.textContent === '条件法') {
+        return 'je resterais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu restes';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es es resté';
+        } else if (tense.textContent === '半過去') {
+          return 'tu restais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais resté';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu resteras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu restes';
+      } else if (type.textContent === '条件法') {
+        return 'tu resterais';
+      } else if (type.textContent === '命令法') {
+        return 'reste'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il reste';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est resté';
+        } else if (tense.textContent === '半過去') {
+          return 'il restait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était resté';
+        } else if (tense.textContent === '単純未来') {
+          return 'il restera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il reste';
+      } else if (type.textContent === '条件法') {
+        return 'il resterait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous restons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes restés';
+        } else if (tense.textContent === '半過去') {
+          return 'nous restions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions restés';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous resteront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous restions';
+      } else if (type.textContent === '条件法') {
+        return 'nous resterions';
+      } else if (type.textContent === '命令法') {
+        return 'restons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous restez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes resté';
+        } else if (tense.textContent === '半過去') {
+          return 'vous restiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez resté';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous resterez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous restiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous resteriez';
+      } else if (type.textContent === '命令法') {
+        return 'restez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils restent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont restés';
+        } else if (tense.textContent === '半過去') {
+          return 'ils restaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient restés';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils resteront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils restent';
+      } else if (type.textContent === '条件法') {
+        return 'resteraient';
+      }
+    }
+  //parler
+  } else if (verb.textContent === 'parler') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je parle';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai parlé';
+        } else if (tense.textContent === '半過去') {
+          return 'je parlais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais parlé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je parlerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je parle';
+      } else if (type.textContent === '条件法') {
+        return 'je parlerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu parles';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as parlé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu parlais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais parlé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu parlera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu parles';
+      } else if (type.textContent === '条件法') {
+        return 'tu parlerais';
+      } else if (type.textContent === '命令法') {
+        return 'parlez'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il parle';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a parlé';
+        } else if (tense.textContent === '半過去') {
+          return 'il parlait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait parlé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il parlera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il parle';
+      } else if (type.textContent === '条件法') {
+        return 'il parlerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous parlons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons parlé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous parlions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions parlé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous parlerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous parlions';
+      } else if (type.textContent === '条件法') {
+        return 'nous parlerions';
+      } else if (type.textContent === '命令法') {
+        return 'parlons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous parlez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez parlé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous parliez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez parlé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous parlerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous parliez';
+      } else if (type.textContent === '条件法') {
+        return 'vous parleriez';
+      } else if (type.textContent === '命令法') {
+        return 'parlez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils parlent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont parlé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils parlaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient parlé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils parleront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils parlent';
+      } else if (type.textContent === '条件法') {
+        return 'ils parleraient';
+      }
+    }
   } else {
     return 'error';
   }
@@ -1101,4 +1455,3 @@ $(function() {
     }
   });
 });
-
