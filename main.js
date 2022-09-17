@@ -1019,7 +1019,7 @@ function getCorrect() {
         if (tense.textContent === '現在') {
           return 'j\'arrive';
         } else if (tense.textContent === '複合過去') {
-          return 'Je suis arrivé';
+          return 'je suis arrivé';
         } else if (tense.textContent === '半過去') {
           return 'j\'arrivais';
         } else if (tense.textContent === '大過去') {
