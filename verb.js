@@ -1406,6 +1406,123 @@ function getCorrect() {
         return 'ils viendraient';
       }
     }
+  //s'asseoir
+  } else if (verb.textContent === 's\'asseoir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je m\'assois';
+        } else if (tense.textContent === '複合過去') {
+          return 'je me suis assis';
+        } else if (tense.textContent === '半過去') {
+          return 'je m\'assoyais';
+        } else if (tense.textContent === '大過去') {
+          return 'je m\'étais assis';
+        } else if (tense.textContent === '単純未来') {
+          return 'je m\'assoirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je m\'assoie';
+      } else if (type.textContent === '条件法') {
+        return 'je m\'assoirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu t\'assois';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu t\'es assis';
+        } else if (tense.textContent === '半過去') {
+          return 'tu  t\'assoyais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu t\'étais assis';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu t\'assoiras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu t\'assoies';
+      } else if (type.textContent === '条件法') {
+        return 'tu t\'assoirais';
+      } else if (type.textContent === '命令法') {
+        return 'assois-toi'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il s\'assoit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il s\'est assis';
+        } else if (tense.textContent === '半過去') {
+          return 'il s\'assoyait';
+        } else if (tense.textContent === '大過去') {
+          return 'il s\'était assis';
+        } else if (tense.textContent === '単純未来') {
+          return 'il s\'assoira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il s\'assoie';
+      } else if (type.textContent === '条件法') {
+        return 'il s\'assoirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous nous assoyons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous nous sommes assis';
+        } else if (tense.textContent === '半過去') {
+          return 'nous assoyions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous nous étions assis';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous nous assoirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous assoyions';
+      } else if (type.textContent === '条件法') {
+        return 'nous nous assoirions';
+      } else if (type.textContent === '命令法') {
+        return 'assoyons-nous'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous vous assoyez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous vous êtes assis';
+        } else if (tense.textContent === '半過去') {
+          return 'vous vous assoyiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez assis';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous vous assoirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous vous assoyiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous vous assoiriez';
+      } else if (type.textContent === '命令法') {
+        return 'assoyez-vous'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils s\'assoient';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils se sont assis';
+        } else if (tense.textContent === '半過去') {
+          return 'ils s\'assoyaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils s\'étaient assis';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils s\'assoiront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils s\'assoient';
+      } else if (type.textContent === '条件法') {
+        return 'ils s\'assoiraient';
+      }
+    }
   } else {
     return 'error';
   }
