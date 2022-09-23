@@ -1641,7 +1641,7 @@ function getCorrect() {
       }
     }
   //se réveiller
-  } else if (verb.textContent === 's\'asseoir') {
+  } else if (verb.textContent === 'se réveiller') {
     if (subject.textContent === 'je') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
