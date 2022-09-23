@@ -1,9 +1,9 @@
 const verbList = [
   'avoir','être','faire','prendre','finir','regarder','devoir','aller',
-  'arriver','rester','parler','venir'
+  'arriver','rester','parler','venir','s\'asseoir'
 ];
 const verbList_backup = [
-  's\'asseoir', 'savoir', 'manger', 'comprendre','dormir',
+  'savoir', 'manger', 'comprendre','dormir',
   'marcher', 'apprendre', 'rentrer', 'revenir', 'tomber'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
