@@ -1471,14 +1471,14 @@ function getCorrect() {
         } else if (tense.textContent === '複合過去') {
           return 'nous nous sommes assis';
         } else if (tense.textContent === '半過去') {
-          return 'nous assoyions';
+          return 'nous nous assoyions';
         } else if (tense.textContent === '大過去') {
           return 'nous nous étions assis';
         } else if (tense.textContent === '単純未来') {
           return 'nous nous assoirons';
         }
       } else if (type.textContent === '接続法(queから入力)') {
-        return 'que nous assoyions';
+        return 'que nous nous assoyions';
       } else if (type.textContent === '条件法') {
         return 'nous nous assoirions';
       } else if (type.textContent === '命令法') {
@@ -1493,7 +1493,7 @@ function getCorrect() {
         } else if (tense.textContent === '半過去') {
           return 'vous vous assoyiez';
         } else if (tense.textContent === '大過去') {
-          return 'vous étiez assis';
+          return 'vous vous étiez assis';
         } else if (tense.textContent === '単純未来') {
           return 'vous vous assoirez';
         }
@@ -1521,6 +1521,240 @@ function getCorrect() {
         return 'qu\'ils s\'assoient';
       } else if (type.textContent === '条件法') {
         return 'ils s\'assoiraient';
+      }
+    }
+  //manger
+  } else if (verb.textContent === 'manger') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je mange';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai mangé';
+        } else if (tense.textContent === '半過去') {
+          return 'je mangeais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais mangé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je mangerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je mange';
+      } else if (type.textContent === '条件法') {
+        return 'je mangerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu manges';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as mangé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu mangeais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais mangé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu mangeras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu mange';
+      } else if (type.textContent === '条件法') {
+        return 'tu mangerais';
+      } else if (type.textContent === '命令法') {
+        return 'mange'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il mange';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a mangé';
+        } else if (tense.textContent === '半過去') {
+          return 'il mangeait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait mangé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il mangera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il mange';
+      } else if (type.textContent === '条件法') {
+        return 'il mangerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous mangeons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons mangé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous mangions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions mangé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous mangerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous mangions';
+      } else if (type.textContent === '条件法') {
+        return 'nous mangerions';
+      } else if (type.textContent === '命令法') {
+        return 'mangeons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous mangez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez mangé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous mangiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez mangé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous mangerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous mangiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous mangeriez';
+      } else if (type.textContent === '命令法') {
+        return 'mangez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils mangent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont mangé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils mangeaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient mangé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils mangeront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils mangent';
+      } else if (type.textContent === '条件法') {
+        return 'ils mangeraient';
+      }
+    }
+  //se réveiller
+  } else if (verb.textContent === 's\'asseoir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je me réveille';
+        } else if (tense.textContent === '複合過去') {
+          return 'je me suis réveillé';
+        } else if (tense.textContent === '半過去') {
+          return 'je me réveillais';
+        } else if (tense.textContent === '大過去') {
+          return 'je m\'étais réveillé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je me réveillerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je me réveille';
+      } else if (type.textContent === '条件法') {
+        return 'je me réveillerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu te réveilles';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu t\'es réveillé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu te réveillais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu t\'étais réveillé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu te réveilleras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu te réveilles';
+      } else if (type.textContent === '条件法') {
+        return 'tu te réveillerais';
+      } else if (type.textContent === '命令法') {
+        return 'réveille-toi'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il se réveille';
+        } else if (tense.textContent === '複合過去') {
+          return 'il s\'est réveillé';
+        } else if (tense.textContent === '半過去') {
+          return 'il se réveillait';
+        } else if (tense.textContent === '大過去') {
+          return 'il s\'était réveillé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il se réveillera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il se réveille';
+      } else if (type.textContent === '条件法') {
+        return 'il se réveillerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous nous réveillons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous nous sommes réveillés';
+        } else if (tense.textContent === '半過去') {
+          return 'nous nous réveillions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous nous étions réveillés';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous nous réveillerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous nous réveillions';
+      } else if (type.textContent === '条件法') {
+        return 'nous nous réveillerions';
+      } else if (type.textContent === '命令法') {
+        return 'réveillons-nous'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous vous réveillez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous vous êtes réveillé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous vous réveilliez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous vous étiez réveillé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous vous réveillerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous vous réveilliez';
+      } else if (type.textContent === '条件法') {
+        return 'vous vous réveilleriez';
+      } else if (type.textContent === '命令法') {
+        return 'réveillez-vous'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils se réveillent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils se sont réveillés';
+        } else if (tense.textContent === '半過去') {
+          return 'ils se réveillaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils s\'étaient réveillés';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils se réveilleront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils se réveillent';
+      } else if (type.textContent === '条件法') {
+        return 'ils se réveilleraient';
       }
     }
   } else {

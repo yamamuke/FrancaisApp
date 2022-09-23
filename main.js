@@ -1,6 +1,6 @@
 const verbList = [
   'avoir','être','faire','prendre','finir','regarder','devoir','aller',
-  'arriver','rester','parler','venir','s\'asseoir'
+  'arriver','rester','parler','venir','s\'asseoir','manger','se réveiller'
 ];
 const verbList_backup = [
   'savoir', 'manger', 'comprendre','dormir',
