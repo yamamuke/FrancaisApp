@@ -3,7 +3,7 @@ const verbList = [
   'arriver','rester','parler','venir','s\'asseoir','manger','se réveiller'
 ];
 const verbList_backup = [
-  'savoir', 'manger', 'comprendre','dormir',
+  'créer', 'savoir', 'comprendre', 'dormir',
   'marcher', 'apprendre', 'rentrer', 'revenir', 'tomber'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
