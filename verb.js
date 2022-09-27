@@ -1757,6 +1757,123 @@ function getCorrect() {
         return 'ils se réveilleraient';
       }
     }
+  //appeler
+    } else if (verb.textContent === 'appeler') {
+      if (subject.textContent === 'je') {
+        if (type.textContent === '直接法') {
+          if (tense.textContent === '現在') {
+            return 'j\'appelle';
+          } else if (tense.textContent === '複合過去') {
+            return 'j\'ai appelé';
+          } else if (tense.textContent === '半過去') {
+            return 'j\'appelais';
+          } else if (tense.textContent === '大過去') {
+            return 'j\'avais appelé';
+          } else if (tense.textContent === '単純未来') {
+            return 'j\'appellerai';
+          }
+        } else if (type.textContent === '接続法(queから入力)') {
+          return 'que j\'appelle';
+        } else if (type.textContent === '条件法') {
+          return 'j\'appellerais';
+        }
+      } else if (subject.textContent === 'tu') {
+        if (type.textContent === '直接法') {
+          if (tense.textContent === '現在') {
+            return 'tu appelles';
+          } else if (tense.textContent === '複合過去') {
+            return 'tu as appelé';
+          } else if (tense.textContent === '半過去') {
+            return 'tu appelais';
+          } else if (tense.textContent === '大過去') {
+            return 'tu avais appelé';
+          } else if (tense.textContent === '単純未来') {
+            return 'tu appelleras';
+          }
+        } else if (type.textContent === '接続法(queから入力)') {
+          return 'que tu appelles';
+        } else if (type.textContent === '条件法') {
+          return 'tu appellerais';
+        } else if (type.textContent === '命令法') {
+          return 'appelle'
+        }
+      } else if (subject.textContent === 'il') {
+        if (type.textContent === '直接法') {
+          if (tense.textContent === '現在') {
+            return 'il appelle';
+          } else if (tense.textContent === '複合過去') {
+            return 'il a appelé';
+          } else if (tense.textContent === '半過去') {
+            return 'il appelait';
+          } else if (tense.textContent === '大過去') {
+            return 'il avait appelé';
+          } else if (tense.textContent === '単純未来') {
+            return 'il appellera';
+          }
+        } else if (type.textContent === '接続法(queから入力)') {
+          return 'qu\'il appelle';
+        } else if (type.textContent === '条件法') {
+          return 'il appellerait';
+        }
+      } else if (subject.textContent === 'nous') {
+        if (type.textContent === '直接法') {
+          if (tense.textContent === '現在') {
+            return 'nous appelons';
+          } else if (tense.textContent === '複合過去') {
+            return 'nous avons appelé';
+          } else if (tense.textContent === '半過去') {
+            return 'nous appelions';
+          } else if (tense.textContent === '大過去') {
+            return 'nous avions appelé';
+          } else if (tense.textContent === '単純未来') {
+            return 'nous appellerons';
+          }
+        } else if (type.textContent === '接続法(queから入力)') {
+          return 'que nous appelions';
+        } else if (type.textContent === '条件法') {
+          return 'nous appellerions';
+        } else if (type.textContent === '命令法') {
+          return 'appelons';
+        }
+      } else if (subject.textContent === 'vous') {
+        if (type.textContent === '直接法') {
+          if (tense.textContent === '現在') {
+            return 'vous appelez';
+          } else if (tense.textContent === '複合過去') {
+            return 'vous avez appelé';
+          } else if (tense.textContent === '半過去') {
+            return 'vous appeliez';
+          } else if (tense.textContent === '大過去') {
+            return 'vous aviez appelé';
+          } else if (tense.textContent === '単純未来') {
+            return 'vous appellerez';
+          }
+        } else if (type.textContent === '接続法(queから入力)') {
+          return 'que vous appeliez';
+        } else if (type.textContent === '条件法') {
+          return 'vous appelleriez';
+        } else if (type.textContent === '命令法') {
+          return 'appelez';
+        }
+      } else if (subject.textContent === 'ils') {
+        if (type.textContent === '直接法') {
+          if (tense.textContent === '現在') {
+            return 'ils appellent';
+          } else if (tense.textContent === '複合過去') {
+            return 'ils ont appelé';
+          } else if (tense.textContent === '半過去') {
+            return 'ils appelaient';
+          } else if (tense.textContent === '大過去') {
+            return 'ils avaient appelé';
+          } else if (tense.textContent === '単純未来') {
+            return 'ils appelleront';
+          }
+        } else if (type.textContent === '接続法(queから入力)') {
+          return 'qu\'ils appellent';
+        } else if (type.textContent === '条件法') {
+          return 'ils appelleraient';
+        }
+      }
   } else {
     return 'error';
   }
