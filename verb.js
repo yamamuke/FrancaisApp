@@ -828,7 +828,7 @@ function getCorrect() {
         if (tense.textContent === '現在') {
           return 'je vais';
         } else if (tense.textContent === '複合過去') {
-          return 'jesuis allé';
+          return 'je suis allé';
         } else if (tense.textContent === '半過去') {
           return 'j\'allais';
         } else if (tense.textContent === '大過去') {
