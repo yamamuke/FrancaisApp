@@ -1991,6 +1991,240 @@ function getCorrect() {
         return 'ils achèteraient';
       }
     }
+  //créer
+  } else if (verb.textContent === 'créer') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je crée';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai créé';
+        } else if (tense.textContent === '半過去') {
+          return 'je créais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais créé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je créerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je crée';
+      } else if (type.textContent === '条件法') {
+        return 'je créerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu crées';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as créé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu créais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais créé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu créeras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu crées';
+      } else if (type.textContent === '条件法') {
+        return 'tu créerais';
+      } else if (type.textContent === '命令法') {
+        return 'crée'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il crée';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a créé';
+        } else if (tense.textContent === '半過去') {
+          return 'il créait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait créé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il créera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il crée';
+      } else if (type.textContent === '条件法') {
+        return 'il créerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous créons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons créé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous créions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions créé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous créerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous créions';
+      } else if (type.textContent === '条件法') {
+        return 'nous créerions';
+      } else if (type.textContent === '命令法') {
+        return 'créons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous créez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez créé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous créiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez créé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous créerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous créiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous créeriez';
+      } else if (type.textContent === '命令法') {
+        return 'créez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils créent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont créé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils créaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient créé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils créeront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils créent';
+      } else if (type.textContent === '条件法') {
+        return 'ils créeraient';
+      }
+    }
+  //lire
+  } else if (verb.textContent === 'lire') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je lis';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai lu';
+        } else if (tense.textContent === '半過去') {
+          return 'je lisais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais lu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je lirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je lise';
+      } else if (type.textContent === '条件法') {
+        return 'je lirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu lis';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as lu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu lisais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais lu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu liras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu lises';
+      } else if (type.textContent === '条件法') {
+        return 'tu lirais';
+      } else if (type.textContent === '命令法') {
+        return 'lis'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il lit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a lu';
+        } else if (tense.textContent === '半過去') {
+          return 'il lisait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait lu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il lira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il lise';
+      } else if (type.textContent === '条件法') {
+        return 'il lirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous lisons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons lu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous lisions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions lu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous lirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous lisions';
+      } else if (type.textContent === '条件法') {
+        return 'nous lirions';
+      } else if (type.textContent === '命令法') {
+        return 'lisons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous lisez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez lu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous lisiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez lu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous lirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous lisiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous liriez';
+      } else if (type.textContent === '命令法') {
+        return 'lisez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils lisent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont lu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils lisaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient lu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils liront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils lisent';
+      } else if (type.textContent === '条件法') {
+        return 'ils liraient';
+      }
+    }
   } else {
     return 'error';
   }
