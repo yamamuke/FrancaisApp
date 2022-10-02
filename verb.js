@@ -2225,6 +2225,240 @@ function getCorrect() {
         return 'ils liraient';
       }
     }
+  //mettre
+  } else if (verb.textContent === 'mettre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je mets';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai mis';
+        } else if (tense.textContent === '半過去') {
+          return 'je mettais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais mis';
+        } else if (tense.textContent === '単純未来') {
+          return 'je mettrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je mette';
+      } else if (type.textContent === '条件法') {
+        return 'je mettrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu mets';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as mis';
+        } else if (tense.textContent === '半過去') {
+          return 'tu mettais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais mis';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu mettras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu mettes';
+      } else if (type.textContent === '条件法') {
+        return 'tu mettrais';
+      } else if (type.textContent === '命令法') {
+        return 'mets'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il met';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a mis';
+        } else if (tense.textContent === '半過去') {
+          return 'il mettait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait mis';
+        } else if (tense.textContent === '単純未来') {
+          return 'il mettra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il mette';
+      } else if (type.textContent === '条件法') {
+        return 'il mettrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous mettons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons mis';
+        } else if (tense.textContent === '半過去') {
+          return 'nous mettions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions mis';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous mettrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous mettions';
+      } else if (type.textContent === '条件法') {
+        return 'nous mettrions';
+      } else if (type.textContent === '命令法') {
+        return 'mettons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous mettez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez mis';
+        } else if (tense.textContent === '半過去') {
+          return 'vous mettiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez mis';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous mettrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous mettiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous mettriez';
+      } else if (type.textContent === '命令法') {
+        return 'mettez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils mettent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont mis';
+        } else if (tense.textContent === '半過去') {
+          return 'ils mettaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient mis';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils mettront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils mettent';
+      } else if (type.textContent === '条件法') {
+        return 'ils mettraient';
+      }
+    }
+  //voir
+  } else if (verb.textContent === 'voir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je vois';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai vu';
+        } else if (tense.textContent === '半過去') {
+          return 'je voyais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais vu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je verrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je voie';
+      } else if (type.textContent === '条件法') {
+        return 'je verrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu vois';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as vu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu voyais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais vu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu verras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu voies';
+      } else if (type.textContent === '条件法') {
+        return 'tu verrais';
+      } else if (type.textContent === '命令法') {
+        return 'vois';
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il voit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a vu';
+        } else if (tense.textContent === '半過去') {
+          return 'il voyait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait vu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il verra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il voie';
+      } else if (type.textContent === '条件法') {
+        return 'il verrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous voyons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons vu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous voyions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions vu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous verrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous voyions';
+      } else if (type.textContent === '条件法') {
+        return 'nous verrions';
+      } else if (type.textContent === '命令法') {
+        return 'voyons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous voyez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez vu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous voyiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez vu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous verrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous voyiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous verriez';
+      } else if (type.textContent === '命令法') {
+        return 'voyez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils voient';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont vu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils voyaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient vu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils verront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils voient';
+      } else if (type.textContent === '条件法') {
+        return 'ils verraient';
+      }
+    }
   } else {
     return 'error';
   }
