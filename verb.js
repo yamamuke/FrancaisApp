@@ -2459,6 +2459,123 @@ function getCorrect() {
         return 'ils verraient';
       }
     }
+  //boire
+  } else if (verb.textContent === 'boire') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je bois';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai bu';
+        } else if (tense.textContent === '半過去') {
+          return 'je buvais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais bu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je boirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je boive';
+      } else if (type.textContent === '条件法') {
+        return 'je boirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu bois';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as bu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu buvais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais bu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu boiras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu boives';
+      } else if (type.textContent === '条件法') {
+        return 'tu boirais';
+      } else if (type.textContent === '命令法') {
+        return 'bois'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il boit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a bu';
+        } else if (tense.textContent === '半過去') {
+          return 'il buvait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait bu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il boira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il boive';
+      } else if (type.textContent === '条件法') {
+        return 'il boirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous buvons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons bu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous buvions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions bu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous boirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous buvions';
+      } else if (type.textContent === '条件法') {
+        return 'nous boirions';
+      } else if (type.textContent === '命令法') {
+        return 'buvons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous buvez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez bu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous buviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez bu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous boirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous buviez';
+      } else if (type.textContent === '条件法') {
+        return 'vous boiriez';
+      } else if (type.textContent === '命令法') {
+        return 'buvez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils boivent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont bu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils buvaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient bu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils boiront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils boivent';
+      } else if (type.textContent === '条件法') {
+        return 'ils boiraient';
+      }
+    }
   } else {
     return 'error';
   }
