@@ -2576,6 +2576,123 @@ function getCorrect() {
         return 'ils boiraient';
       }
     }
+  //savoir
+  } else if (verb.textContent === 'savoir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je sais';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai su';
+        } else if (tense.textContent === '半過去') {
+          return 'je savais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais su';
+        } else if (tense.textContent === '単純未来') {
+          return 'je saurai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je sache';
+      } else if (type.textContent === '条件法') {
+        return 'je saurais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu sais';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as su';
+        } else if (tense.textContent === '半過去') {
+          return 'tu savais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais su';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu sauras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu saches';
+      } else if (type.textContent === '条件法') {
+        return 'tu saurais';
+      } else if (type.textContent === '命令法') {
+        return 'sache';
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il sait';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a su';
+        } else if (tense.textContent === '半過去') {
+          return 'il savait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait su';
+        } else if (tense.textContent === '単純未来') {
+          return 'il saura';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il sache';
+      } else if (type.textContent === '条件法') {
+        return 'il saurait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous savons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons su';
+        } else if (tense.textContent === '半過去') {
+          return 'nous savions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions su';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous saurons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous sachions';
+      } else if (type.textContent === '条件法') {
+        return 'nous saurions';
+      } else if (type.textContent === '命令法') {
+        return 'sachons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous savez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez su';
+        } else if (tense.textContent === '半過去') {
+          return 'vous saviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez su';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous saurez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous sachiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous sauriez';
+      } else if (type.textContent === '命令法') {
+        return 'sachez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils savent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont su';
+        } else if (tense.textContent === '半過去') {
+          return 'ils savaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient su';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils sauront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils sachent';
+      } else if (type.textContent === '条件法') {
+        return 'ils sauraient';
+      }
+    }
   } else {
     return 'error';
   }
