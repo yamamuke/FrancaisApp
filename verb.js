@@ -2716,98 +2716,98 @@ function getCorrect() {
     } else if (subject.textContent === 'tu') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
-          return 'tu as';
+          return 'tu écris';
         } else if (tense.textContent === '複合過去') {
-          return 'tu as eu';
+          return 'tu as écrit';
         } else if (tense.textContent === '半過去') {
-          return 'tu avais';
+          return 'tu écrivais';
         } else if (tense.textContent === '大過去') {
-          return 'tu avais eu';
+          return 'tu avais écrit';
         } else if (tense.textContent === '単純未来') {
-          return 'tu auras';
+          return 'tu écriras';
         }
       } else if (type.textContent === '接続法(queから入力)') {
-        return 'que tu aies';
+        return 'que tu écrives';
       } else if (type.textContent === '条件法') {
-        return 'tu aurais';
+        return 'tu écrirais';
       } else if (type.textContent === '命令法') {
-        return 'aie'
+        return 'écris'
       }
     } else if (subject.textContent === 'il') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
-          return 'il a';
+          return 'il écrit';
         } else if (tense.textContent === '複合過去') {
-          return 'il a eu';
+          return 'il a écrit';
         } else if (tense.textContent === '半過去') {
-          return 'il avait';
+          return 'il écrivait';
         } else if (tense.textContent === '大過去') {
-          return 'il avait eu';
+          return 'il avait écrit';
         } else if (tense.textContent === '単純未来') {
-          return 'il aura';
+          return 'il écrira';
         }
       } else if (type.textContent === '接続法(queから入力)') {
-        return 'qu\'il ait';
+        return 'qu\'il écrive';
       } else if (type.textContent === '条件法') {
-        return 'il aurait';
+        return 'il écrirait';
       }
     } else if (subject.textContent === 'nous') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
-          return 'nous avons';
+          return 'nous écrivons';
         } else if (tense.textContent === '複合過去') {
-          return 'nous avons eu';
+          return 'nous avons écrit';
         } else if (tense.textContent === '半過去') {
-          return 'nous avions';
+          return 'nous écrivions';
         } else if (tense.textContent === '大過去') {
-          return 'nous avions eu';
+          return 'nous avions écrit';
         } else if (tense.textContent === '単純未来') {
-          return 'nous aurons';
+          return 'nous écrirons';
         }
       } else if (type.textContent === '接続法(queから入力)') {
-        return 'que nous ayons';
+        return 'que nous écrivions';
       } else if (type.textContent === '条件法') {
-        return 'nous aurions';
+        return 'nous écririons';
       } else if (type.textContent === '命令法') {
-        return 'ayons'
+        return 'écrivons'
       }
     } else if (subject.textContent === 'vous') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
-          return 'vous avez';
+          return 'vous écrivez';
         } else if (tense.textContent === '複合過去') {
-          return 'vous avez eu';
+          return 'vous avez écrit';
         } else if (tense.textContent === '半過去') {
-          return 'vous aviez';
+          return 'vous écriviez';
         } else if (tense.textContent === '大過去') {
-          return 'vous aviez eu';
+          return 'vous aviez écrit';
         } else if (tense.textContent === '単純未来') {
-          return 'vous aurez';
+          return 'vous écrirez';
         }
       } else if (type.textContent === '接続法(queから入力)') {
-        return 'que vous ayez';
+        return 'que vous écriviez';
       } else if (type.textContent === '条件法') {
-        return 'vous auriez';
+        return 'vous écririez';
       } else if (type.textContent === '命令法') {
-        return 'ayez'
+        return 'écrivez'
       }
     } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
         if (tense.textContent === '現在') {
-          return 'ils ont';
+          return 'ils écrivent';
         } else if (tense.textContent === '複合過去') {
-          return 'ils ont eu';
+          return 'ils ont écrit';
         } else if (tense.textContent === '半過去') {
-          return 'ils avaient';
+          return 'ils écrivaient';
         } else if (tense.textContent === '大過去') {
-          return 'ils avaient eu';
+          return 'ils avaient écrit';
         } else if (tense.textContent === '単純未来') {
-          return 'ils auront';
+          return 'ils écriront';
         }
       } else if (type.textContent === '接続法(queから入力)') {
-        return 'qu\'ils aient';
+        return 'qu\'ils écrivent';
       } else if (type.textContent === '条件法') {
-        return 'ils auraient';
+        return 'ils écriraient';
       }
     }
   } else {
