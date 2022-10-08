@@ -2810,6 +2810,123 @@ function getCorrect() {
         return 'ils écriraient';
       }
     }
+  //rentrer
+  } else if (verb.textContent === 'rentrer') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je rentre';
+        } else if (tense.textContent === '複合過去') {
+          return 'Je suis rentré';
+        } else if (tense.textContent === '半過去') {
+          return 'je rentrais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais rentré';
+        } else if (tense.textContent === '単純未来') {
+          return 'je rentrerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je rentre';
+      } else if (type.textContent === '条件法') {
+        return 'je rentrerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu rentres';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es rentré';
+        } else if (tense.textContent === '半過去') {
+          return 'tu rentrais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais rentré';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu rentreras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu rentres';
+      } else if (type.textContent === '条件法') {
+        return 'tu rentrerais';
+      } else if (type.textContent === '命令法') {
+        return 'rentre'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il rentre';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est rentré';
+        } else if (tense.textContent === '半過去') {
+          return 'il rentrait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était rentré';
+        } else if (tense.textContent === '単純未来') {
+          return 'il rentrera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il rentre';
+      } else if (type.textContent === '条件法') {
+        return 'il rentrerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous rentrons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes rentrés';
+        } else if (tense.textContent === '半過去') {
+          return 'nous rentrions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions rentrés';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous rentrerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous rentrions';
+      } else if (type.textContent === '条件法') {
+        return 'nous rentrerions';
+      } else if (type.textContent === '命令法') {
+        return 'rentrons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous rentrez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes rentré';
+        } else if (tense.textContent === '半過去') {
+          return 'vous rentriez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez rentré';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous rentrerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous rentriez';
+      } else if (type.textContent === '条件法') {
+        return 'vous rentreriez';
+      } else if (type.textContent === '命令法') {
+        return 'rentrez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils rentrent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont rentrés';
+        } else if (tense.textContent === '半過去') {
+          return 'ils rentraient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient rentrés';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils rentreront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils rentrent';
+      } else if (type.textContent === '条件法') {
+        return 'ils rentreraient';
+      }
+    }
   } else {
     return 'error';
   }
