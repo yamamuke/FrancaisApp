@@ -565,8 +565,6 @@ function getCorrect() {
         return 'vous finiriez';
       } else if (type.textContent === '命令法') {
         return 'finissez';
-      } else if (type.textContent === '命令法') {
-        return 'finissez-vous';
       }
     } else if (subject.textContent === 'ils') {
       if (type.textContent === '直接法') {
@@ -2925,6 +2923,240 @@ function getCorrect() {
         return 'qu\'ils rentrent';
       } else if (type.textContent === '条件法') {
         return 'ils rentreraient';
+      }
+    }
+  //dormir
+  } else if (verb.textContent === 'dormir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je dors';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai dormi';
+        } else if (tense.textContent === '半過去') {
+          return 'je dormais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais dormi';
+        } else if (tense.textContent === '単純未来') {
+          return 'je dormirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je dorme';
+      } else if (type.textContent === '条件法') {
+        return 'je dormirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu dors';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as dormi';
+        } else if (tense.textContent === '半過去') {
+          return 'tu dormais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais dormi';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu dormiras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu dormes';
+      } else if (type.textContent === '条件法') {
+        return 'tu dormirais';
+      } else if (type.textContent === '命令法') {
+        return 'dors'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il dort';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a dormi';
+        } else if (tense.textContent === '半過去') {
+          return 'il dormait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait dormi';
+        } else if (tense.textContent === '単純未来') {
+          return 'il dormira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il dorme';
+      } else if (type.textContent === '条件法') {
+        return 'il dormirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous dormons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons dormi';
+        } else if (tense.textContent === '半過去') {
+          return 'nous dormions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions dormi';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous dormirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous dormions';
+      } else if (type.textContent === '条件法') {
+        return 'nous dormirions';
+      } else if (type.textContent === '命令法') {
+        return 'dormons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous dormez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez dormi';
+        } else if (tense.textContent === '半過去') {
+          return 'vous dormiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez dormi';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous dormirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous dormiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous dormiriez';
+      } else if (type.textContent === '命令法') {
+        return 'dormez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils dorment';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont dormi';
+        } else if (tense.textContent === '半過去') {
+          return 'ils dormaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient dormi';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils dormiront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils dorment';
+      } else if (type.textContent === '条件法') {
+        return 'ils dormiraient';
+      }
+    }
+  //partir
+  } else if (verb.textContent === 'partir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je pars';
+        } else if (tense.textContent === '複合過去') {
+          return 'Je suis parti';
+        } else if (tense.textContent === '半過去') {
+          return 'je partais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais parti';
+        } else if (tense.textContent === '単純未来') {
+          return 'je partirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je parte';
+      } else if (type.textContent === '条件法') {
+        return 'je partirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu pars';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es parti';
+        } else if (tense.textContent === '半過去') {
+          return 'tu partais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais parti';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu partiras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu partes';
+      } else if (type.textContent === '条件法') {
+        return 'tu partirais';
+      } else if (type.textContent === '命令法') {
+        return 'pars'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il part';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est parti';
+        } else if (tense.textContent === '半過去') {
+          return 'il partait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était parti';
+        } else if (tense.textContent === '単純未来') {
+          return 'il partira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il parte';
+      } else if (type.textContent === '条件法') {
+        return 'il partirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous partons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes partis';
+        } else if (tense.textContent === '半過去') {
+          return 'nous partions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions partis';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous partirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous partions';
+      } else if (type.textContent === '条件法') {
+        return 'nous partirions';
+      } else if (type.textContent === '命令法') {
+        return 'partons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous partez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes parti';
+        } else if (tense.textContent === '半過去') {
+          return 'vous partiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez parti';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous partirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous partiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous partiriez';
+      } else if (type.textContent === '命令法') {
+        return 'partez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils partent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont partis';
+        } else if (tense.textContent === '半過去') {
+          return 'ils partaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient partis';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils partiront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils partent';
+      } else if (type.textContent === '条件法') {
+        return 'ils partiraient';
       }
     }
   } else {

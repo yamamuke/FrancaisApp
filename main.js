@@ -2,11 +2,11 @@ const verbList = [
   'avoir','être','faire','prendre','finir','regarder','devoir','aller',
   'arriver','rester','parler','venir','s\'asseoir','manger','se réveiller',
   'appeler','acheter','créer','lire','mettre','voir','boire','savoir','écrire',
-  'rentrer' 
+  'rentrer','dormir','partir'
 ];
 const verbList_backup = [
-  'comprendre','dormir', 'marcher', 'apprendre', 
-  'revenir', 'tomber'
+  'comprendre', 'marcher', 'apprendre',
+  'revenir', 'tomber', 'sortir', 'ouvrir'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
 const subjectList2 = ['tu', 'nous', 'vous'];
@@ -16,7 +16,7 @@ const tenseList = ['現在', '複合過去', '半過去', '大過去', '単純�
 let randomVerb = Math.floor(Math.random() * verbList.length);
 let randomSubject = Math.floor(Math.random() * subjectList.length);
 let randomSubject2 = Math.floor(Math.random() * subjectList2.length);
-let randomType = Math.floor(Math.random() * typeList.length); 
+let randomType = Math.floor(Math.random() * typeList.length);
 let randomTense = Math.floor(Math.random() * tenseList.length);
 
 // const verb = document.getElementById('verb');
@@ -34,7 +34,7 @@ let randomTense = Math.floor(Math.random() * tenseList.length);
 //     $('#tense').text('現在');
 //   } else {
 //     $('#tense').text(tenseList[randomTense]);
-//   } 
+//   }
 // }
 // function showSubject() {
 //   if ($('#type').textContent === '命令法') {
@@ -59,7 +59,7 @@ $(function() {
 
 //1問目の表示
 verb.textContent = verbList[Math.floor(Math.random() * verbList.length)];
-type.textContent = typeList[Math.floor(Math.random() * typeList.length)]; 
+type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
 if (this.type.textContent === '命令法') {
   subject.textContent = subjectList2[Math.floor(Math.random() * subjectList2.length)];
 } else {
@@ -130,7 +130,7 @@ $(function() {
       $('#reload').css('display', 'block');
     }
   });
-});  
+});
 
 //次の問題ボタンを押したときの処理
 $(function() {
@@ -141,7 +141,7 @@ $(function() {
       $('#change').fadeOut();
       setTimeout(function() {
         verb.textContent = verbList[Math.floor(Math.random() * verbList.length)];
-        type.textContent = typeList[Math.floor(Math.random() * typeList.length)]; 
+        type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
         if (this.type.textContent === '命令法') {
           subject.textContent = subjectList2[Math.floor(Math.random() * subjectList2.length)];
         } else {
@@ -156,8 +156,8 @@ $(function() {
       $('#change').fadeIn();
       $('.result').text('');
       $('.wrong').text('');
-      $('#input').val('');  
-      $('#input').focus(); 
+      $('#input').val('');
+      $('#input').focus();
     }
   });
 });
