@@ -3159,6 +3159,123 @@ function getCorrect() {
         return 'ils partiraient';
       }
     }
+  //ouvrir
+  } else if (verb.textContent === 'ouvrir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'j\'ouvre';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai ouvert';
+        } else if (tense.textContent === '半過去') {
+          return 'j\'ouvrais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais ouvert';
+        } else if (tense.textContent === '単純未来') {
+          return 'j\'ouvrirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que j\'ouvre';
+      } else if (type.textContent === '条件法') {
+        return 'j\'ouvrirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu ouvres';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as ouvert';
+        } else if (tense.textContent === '半過去') {
+          return 'tu ouvrais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais ouvert';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu ouvriras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu ouvres';
+      } else if (type.textContent === '条件法') {
+        return 'tu ouvrirais';
+      } else if (type.textContent === '命令法') {
+        return 'ouvre'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il ouvre';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a ouvert';
+        } else if (tense.textContent === '半過去') {
+          return 'il ouvrait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait ouvert';
+        } else if (tense.textContent === '単純未来') {
+          return 'il ouvrira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il ouvre';
+      } else if (type.textContent === '条件法') {
+        return 'il ouvrirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous ouvrons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons ouvert';
+        } else if (tense.textContent === '半過去') {
+          return 'nous ouvrions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions ouvert';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous ouvrirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous ouvrions';
+      } else if (type.textContent === '条件法') {
+        return 'nous ouvririons';
+      } else if (type.textContent === '命令法') {
+        return 'ouvrons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous ouvrez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez ouvert';
+        } else if (tense.textContent === '半過去') {
+          return 'vous ouvriez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez ouvert';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous ouvrirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous ouvriez';
+      } else if (type.textContent === '条件法') {
+        return 'vous ouvririez';
+      } else if (type.textContent === '命令法') {
+        return 'ouvrez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils ouvrent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont ouvert';
+        } else if (tense.textContent === '半過去') {
+          return 'ils ouvraient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient ouvert';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils ouvriront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils ouvrent';
+      } else if (type.textContent === '条件法') {
+        return 'ils ouvriraient';
+      }
+    }
   } else {
     return 'error';
   }
