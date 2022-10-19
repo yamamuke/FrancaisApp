@@ -3276,6 +3276,123 @@ function getCorrect() {
         return 'ils ouvriraient';
       }
     }
+  //apprendre
+  } else if (verb.textContent === 'apprendre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'j\'apprends';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai appris';
+        } else if (tense.textContent === '半過去') {
+          return 'j\'apprenais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais appris';
+        } else if (tense.textContent === '単純未来') {
+          return 'j\'apprendrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que j\'apprenne';
+      } else if (type.textContent === '条件法') {
+        return 'j\'apprendrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu apprends';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as appris';
+        } else if (tense.textContent === '半過去') {
+          return 'tu apprenais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais appris';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu apprendras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu apprennes';
+      } else if (type.textContent === '条件法') {
+        return 'tu apprendrais';
+      } else if (type.textContent === '命令法') {
+        return 'apprends'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il apprend';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a appris';
+        } else if (tense.textContent === '半過去') {
+          return 'il apprenait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait appris';
+        } else if (tense.textContent === '単純未来') {
+          return 'il apprendra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il apprenne';
+      } else if (type.textContent === '条件法') {
+        return 'il apprendrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous apprenons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons appris';
+        } else if (tense.textContent === '半過去') {
+          return 'nous apprenions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions appris';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous apprendrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous apprenions';
+      } else if (type.textContent === '条件法') {
+        return 'nous apprendrions';
+      } else if (type.textContent === '命令法') {
+        return 'apprenons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous apprenez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez appris';
+        } else if (tense.textContent === '半過去') {
+          return 'vous appreniez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez appris';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous apprendrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous appreniez';
+      } else if (type.textContent === '条件法') {
+        return 'vous apprendriez';
+      } else if (type.textContent === '命令法') {
+        return 'apprenez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils apprennent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont appris';
+        } else if (tense.textContent === '半過去') {
+          return 'ils apprenaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient appris';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils apprendront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils apprennent';
+      } else if (type.textContent === '条件法') {
+        return 'ils apprendraient';
+      }
+    }
   } else {
     return 'error';
   }
