@@ -3393,6 +3393,123 @@ function getCorrect() {
         return 'ils apprendraient';
       }
     }
+  //sortir
+  } else if (verb.textContent === 'sortir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je sors';
+        } else if (tense.textContent === '複合過去') {
+          return 'Je suis sorti';
+        } else if (tense.textContent === '半過去') {
+          return 'je sortais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais sorti';
+        } else if (tense.textContent === '単純未来') {
+          return 'je sortirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je sorte';
+      } else if (type.textContent === '条件法') {
+        return 'je sortirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu sors';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es sorti';
+        } else if (tense.textContent === '半過去') {
+          return 'tu sortais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais sorti';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu sortiras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu sortes';
+      } else if (type.textContent === '条件法') {
+        return 'tu sortirais';
+      } else if (type.textContent === '命令法') {
+        return 'sors'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il sort';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est sorti';
+        } else if (tense.textContent === '半過去') {
+          return 'il sortait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était sorti';
+        } else if (tense.textContent === '単純未来') {
+          return 'il sortira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il sorte';
+      } else if (type.textContent === '条件法') {
+        return 'il sortirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous sortons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes sortis';
+        } else if (tense.textContent === '半過去') {
+          return 'nous sortions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions sortis';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous sortirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous sortions';
+      } else if (type.textContent === '条件法') {
+        return 'nous sortirions';
+      } else if (type.textContent === '命令法') {
+        return 'sortons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous sortez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes sorti';
+        } else if (tense.textContent === '半過去') {
+          return 'vous sortiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez sorti';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous sortirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous sortiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous sortiriez';
+      } else if (type.textContent === '命令法') {
+        return 'sortez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils sortent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont sortis';
+        } else if (tense.textContent === '半過去') {
+          return 'ils sortaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient sortis';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils sortiront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils sortent';
+      } else if (type.textContent === '条件法') {
+        return 'ils sortiraient';
+      }
+    }
   } else {
     return 'error';
   }
