@@ -3510,6 +3510,240 @@ function getCorrect() {
         return 'ils sortiraient';
       }
     }
+  //vouloir
+  } else if (verb.textContent === 'vouloir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je veux';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai voulu';
+        } else if (tense.textContent === '半過去') {
+          return 'je voulais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais voulu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je voudrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je veuille';
+      } else if (type.textContent === '条件法') {
+        return 'je voudrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu veux';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as voulu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu voulais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais voulu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu voudras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu veuilles';
+      } else if (type.textContent === '条件法') {
+        return 'tu voudrais';
+      } else if (type.textContent === '命令法') {
+        return 'veuille'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il veut';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a voulu';
+        } else if (tense.textContent === '半過去') {
+          return 'il voulait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait voulu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il voudra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il veuille';
+      } else if (type.textContent === '条件法') {
+        return 'il voudrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous voulons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons voulu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous voulions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions voulu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous voudrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous voulions';
+      } else if (type.textContent === '条件法') {
+        return 'nous voudrions';
+      } else if (type.textContent === '命令法') {
+        return 'veuillons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous voulez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez voulu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous vouliez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez voulu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous voudrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous vouliez';
+      } else if (type.textContent === '条件法') {
+        return 'vous voudriez';
+      } else if (type.textContent === '命令法') {
+        return 'veuillez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils veulent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont voulu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils voulaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient voulu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils voudront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils veuillent';
+      } else if (type.textContent === '条件法') {
+        return 'ils voudraient';
+      }
+    }
+  //pouvoir
+  } else if (verb.textContent === 'pouvoir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je peux';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai pu';
+        } else if (tense.textContent === '半過去') {
+          return 'je pouvais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais pu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je pourrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je puisse';
+      } else if (type.textContent === '条件法') {
+        return 'je pourrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu peux';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as pu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu pouvais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais pu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu pourras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu puisses';
+      } else if (type.textContent === '条件法') {
+        return 'tu pourrais';
+      } else if (type.textContent === '命令法') {
+        return 'peux'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il peut';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a pu';
+        } else if (tense.textContent === '半過去') {
+          return 'il pouvait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait pu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il pourra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il puisse';
+      } else if (type.textContent === '条件法') {
+        return 'il pourrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous pouvons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons pu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous pouvions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions pu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous pourrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous puissions';
+      } else if (type.textContent === '条件法') {
+        return 'nous pourrions';
+      } else if (type.textContent === '命令法') {
+        return 'pouvons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous pouvez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez pu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous pouviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez pu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous pourrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous puissiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous pourriez';
+      } else if (type.textContent === '命令法') {
+        return 'pouvez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils peuvent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont pu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils pouvaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient pu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils pourront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils puissent';
+      } else if (type.textContent === '条件法') {
+        return 'ils pourraient';
+      }
+    }
   } else {
     return 'error';
   }
