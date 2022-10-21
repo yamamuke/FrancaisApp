@@ -1555,7 +1555,7 @@ function getCorrect() {
           return 'tu mangeras';
         }
       } else if (type.textContent === '接続法(queから入力)') {
-        return 'que tu mange';
+        return 'que tu manges';
       } else if (type.textContent === '条件法') {
         return 'tu mangerais';
       } else if (type.textContent === '命令法') {
