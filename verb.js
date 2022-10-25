@@ -3744,6 +3744,144 @@ function getCorrect() {
         return 'ils pourraient';
       }
     }
+  //falloir
+  } else if (verb.textContent === 'falloir') {
+    if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il faut';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a fallu';
+        } else if (tense.textContent === '半過去') {
+          return 'il fallait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait fallu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il faudra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il faille';
+      } else if (type.textContent === '条件法') {
+        return 'il faudrait';
+      }
+    }
+  //tenir
+  } else if (verb.textContent === 'tenir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je tiens';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai tenu';
+        } else if (tense.textContent === '半過去') {
+          return 'je tenais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais tenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je tiendrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je tienne';
+      } else if (type.textContent === '条件法') {
+        return 'je tiendrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu tiens';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as tenu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu tenais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais tenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu tiendras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu tiennes';
+      } else if (type.textContent === '条件法') {
+        return 'tu tiendrais';
+      } else if (type.textContent === '命令法') {
+        return 'tiens'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il tient';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a tenu';
+        } else if (tense.textContent === '半過去') {
+          return 'il tenait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait tenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il tiendra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il tienne';
+      } else if (type.textContent === '条件法') {
+        return 'il tiendrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous tenons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons tenu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous tenions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions tenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous tiendrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous tenions';
+      } else if (type.textContent === '条件法') {
+        return 'nous tiendrions';
+      } else if (type.textContent === '命令法') {
+        return 'tenons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous tenez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez tenu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous teniez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez tenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous tiendrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous teniez';
+      } else if (type.textContent === '条件法') {
+        return 'vous tiendriez';
+      } else if (type.textContent === '命令法') {
+        return 'tenez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils tiennent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont tenu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils tenaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient tenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils tiendront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils tiennent';
+      } else if (type.textContent === '条件法') {
+        return 'ils tiendraient';
+      }
+    }
   } else {
     return 'error';
   }

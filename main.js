@@ -2,15 +2,17 @@ const verbList = [
   'avoir','être','faire','prendre','finir','regarder','devoir','aller',
   'arriver','rester','parler','venir','s\'asseoir','manger','se réveiller',
   'appeler','acheter','créer','lire','mettre','voir','boire','savoir','écrire',
-  'rentrer','dormir','partir','ouvrir','apprendre','sortir','vouloir','pouvoir'
+  'rentrer','dormir','partir','ouvrir','apprendre','sortir','vouloir','pouvoir',
+  'falloir','tenir'
 ];
 const verbList_backup = [
-  'comprendre', 'marcher', 'revenir', 'tomber','falloir','vivre','croire',
-  'suivre','tenir','répondre','sentir','sembler','valoir'
+  'comprendre', 'marcher', 'revenir', 'tomber','vivre','croire',
+  'suivre','répondre','sentir','sembler','valoir'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
 const subjectList2 = ['tu', 'nous', 'vous'];
 const typeList = ['直接法', '条件法', '接続法(queから入力)', '命令法'];
+const typeList2 = ['直接法', '条件法', '接続法(queから入力)'];
 const tenseList = ['現在', '複合過去', '半過去', '大過去', '単純未来'];
 
 let randomVerb = Math.floor(Math.random() * verbList.length);
@@ -59,16 +61,27 @@ $(function() {
 
 //1問目の表示
 verb.textContent = verbList[Math.floor(Math.random() * verbList.length)];
-type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
-if (this.type.textContent === '命令法') {
-  subject.textContent = subjectList2[Math.floor(Math.random() * subjectList2.length)];
+if (this.verb.textContent === 'falloir') {
+  type.textContent = typeList2[Math.floor(Math.random() * typeList2.length)];
+  subject.textContent = 'il';
+  if (type.textContent != '直接法') {
+    tense.textContent = ('現在');
+  } else {
+    tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
+  }
+//falloirではない場合
 } else {
-  subject.textContent = subjectList[Math.floor(Math.random() * subjectList.length)];
-}
-if (type.textContent != '直接法') {
-  tense.textContent = ('現在');
-} else {
-  tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
+  type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
+  if (this.type.textContent === '命令法') {
+    subject.textContent = subjectList2[Math.floor(Math.random() * subjectList2.length)];
+  } else {
+    subject.textContent = subjectList[Math.floor(Math.random() * subjectList.length)];
+  }
+  if (type.textContent != '直接法') {
+    tense.textContent = ('現在');
+  } else {
+    tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
+  }
 }
 
 const num = document.getElementById('num');
@@ -141,16 +154,27 @@ $(function() {
       $('#change').fadeOut();
       setTimeout(function() {
         verb.textContent = verbList[Math.floor(Math.random() * verbList.length)];
-        type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
-        if (this.type.textContent === '命令法') {
-          subject.textContent = subjectList2[Math.floor(Math.random() * subjectList2.length)];
+        if (this.verb.textContent === 'falloir') {
+          type.textContent = typeList2[Math.floor(Math.random() * typeList2.length)];
+          subject.textContent = 'il';
+          if (type.textContent != '直接法') {
+            tense.textContent = ('現在');
+          } else {
+            tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
+          }
+        //falloirではない場合
         } else {
-          subject.textContent = subjectList[Math.floor(Math.random() * subjectList.length)];
-        }
-        if (type.textContent != '直接法') {
-          tense.textContent = ('現在');
-        } else {
-          tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
+          type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
+          if (this.type.textContent === '命令法') {
+            subject.textContent = subjectList2[Math.floor(Math.random() * subjectList2.length)];
+          } else {
+            subject.textContent = subjectList[Math.floor(Math.random() * subjectList.length)];
+          }
+          if (type.textContent != '直接法') {
+            tense.textContent = ('現在');
+          } else {
+            tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
+          }
         }
       },400);
       $('#change').fadeIn();
