@@ -3882,6 +3882,27 @@ function getCorrect() {
         return 'ils tiendraient';
       }
     }
+  //pleuvoir
+  } else if (verb.textContent === 'pleuvoir') {
+    if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il pleut';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a plu';
+        } else if (tense.textContent === '半過去') {
+          return 'il pleuvait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait plu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il pleuvra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il pleuve';
+      } else if (type.textContent === '条件法') {
+        return 'il pleuvrait';
+      }
+    }
   } else {
     return 'error';
   }

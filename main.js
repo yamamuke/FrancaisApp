@@ -3,11 +3,12 @@ const verbList = [
   'arriver','rester','parler','venir','s\'asseoir','manger','se réveiller',
   'appeler','acheter','créer','lire','mettre','voir','boire','savoir','écrire',
   'rentrer','dormir','partir','ouvrir','apprendre','sortir','vouloir','pouvoir',
-  'falloir','tenir'
+  'falloir','tenir','pleuvoir'
 ];
 const verbList_backup = [
   'comprendre', 'marcher', 'revenir', 'tomber','vivre','croire',
-  'suivre','répondre','sentir','sembler','valoir'
+  'suivre','répondre','sentir','sembler','valoir','dire','trouver','donner','aimer','passer',
+  'demander','laisser','penser','entendre','rendre','connaître'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
 const subjectList2 = ['tu', 'nous', 'vous'];
@@ -21,10 +22,10 @@ let randomSubject2 = Math.floor(Math.random() * subjectList2.length);
 let randomType = Math.floor(Math.random() * typeList.length);
 let randomTense = Math.floor(Math.random() * tenseList.length);
 
-// const verb = document.getElementById('verb');
-// const subject = document.getElementById('subject');
-// const type = document.getElementById('type');
-// const tense = document.getElementById('tense');
+const verb = document.getElementById('verb');
+const subject = document.getElementById('subject');
+const type = document.getElementById('type');
+const tense = document.getElementById('tense');
 // function showVerb() {
 //   $('#verb').text(verbList[randomVerb]);
 // }
@@ -61,7 +62,9 @@ $(function() {
 
 //1問目の表示
 verb.textContent = verbList[Math.floor(Math.random() * verbList.length)];
-if (this.verb.textContent === 'falloir') {
+//il限定の動詞の場合
+//falloirまたはpleuvoirの場合
+if (this.verb.textContent === 'falloir' || this.verb.textContent === 'pleuvoir') {
   type.textContent = typeList2[Math.floor(Math.random() * typeList2.length)];
   subject.textContent = 'il';
   if (type.textContent != '直接法') {
@@ -69,7 +72,7 @@ if (this.verb.textContent === 'falloir') {
   } else {
     tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
   }
-//falloirではない場合
+//一般動詞の場合
 } else {
   type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
   if (this.type.textContent === '命令法') {
@@ -154,7 +157,9 @@ $(function() {
       $('#change').fadeOut();
       setTimeout(function() {
         verb.textContent = verbList[Math.floor(Math.random() * verbList.length)];
-        if (this.verb.textContent === 'falloir') {
+        //il限定の動詞の場合
+        //falloirまたはpleuvoirの場合
+        if (this.verb.textContent === 'falloir' || this.verb.textContent === 'pleuvoir') {
           type.textContent = typeList2[Math.floor(Math.random() * typeList2.length)];
           subject.textContent = 'il';
           if (type.textContent != '直接法') {
@@ -162,10 +167,10 @@ $(function() {
           } else {
             tense.textContent = tenseList[Math.floor(Math.random() * tenseList.length)];
           }
-        //falloirではない場合
+        //一般動詞の場合
         } else {
           type.textContent = typeList[Math.floor(Math.random() * typeList.length)];
-          if (this.type.textContent === '命令法') {
+          if (type.textContent === '命令法') {
             subject.textContent = subjectList2[Math.floor(Math.random() * subjectList2.length)];
           } else {
             subject.textContent = subjectList[Math.floor(Math.random() * subjectList.length)];
