@@ -3903,6 +3903,123 @@ function getCorrect() {
         return 'il pleuvrait';
       }
     }
+  //valoir
+  } else if (verb.textContent === 'valoir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je vaux';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai valu';
+        } else if (tense.textContent === '半過去') {
+          return 'je valais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais valu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je vaudrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je vaille';
+      } else if (type.textContent === '条件法') {
+        return 'je vaudrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu vaux';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as valu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu valais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais valu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu vaudras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu vailles';
+      } else if (type.textContent === '条件法') {
+        return 'tu vaudrais';
+      } else if (type.textContent === '命令法') {
+        return 'vaux'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il vaut';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a valu';
+        } else if (tense.textContent === '半過去') {
+          return 'il valait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait valu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il vaudra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il vailles';
+      } else if (type.textContent === '条件法') {
+        return 'il vaudrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous valons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons valu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous valions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions valu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous vaudrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous valions';
+      } else if (type.textContent === '条件法') {
+        return 'nous vaudrions';
+      } else if (type.textContent === '命令法') {
+        return 'valons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous valez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez valu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous valiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez valu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous vaudrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous valiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous vaudriez';
+      } else if (type.textContent === '命令法') {
+        return 'valez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils valent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont valu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils valaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient valu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils vaudront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils vaillent';
+      } else if (type.textContent === '条件法') {
+        return 'ils vaudraient';
+      }
+    }
   } else {
     return 'error';
   }
