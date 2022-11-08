@@ -4020,6 +4020,123 @@ function getCorrect() {
         return 'ils vaudraient';
       }
     }
+  //dire
+  } else if (verb.textContent === 'dire') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je dis';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai dit';
+        } else if (tense.textContent === '半過去') {
+          return 'je disais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais dit';
+        } else if (tense.textContent === '単純未来') {
+          return 'je dirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je dise';
+      } else if (type.textContent === '条件法') {
+        return 'je dirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu dis';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as dit';
+        } else if (tense.textContent === '半過去') {
+          return 'tu disais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais dit';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu diras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu dises';
+      } else if (type.textContent === '条件法') {
+        return 'tu dirais';
+      } else if (type.textContent === '命令法') {
+        return 'dis'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il dit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a dit';
+        } else if (tense.textContent === '半過去') {
+          return 'il disait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait dit';
+        } else if (tense.textContent === '単純未来') {
+          return 'il dira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il dise';
+      } else if (type.textContent === '条件法') {
+        return 'il dirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous disons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons dit';
+        } else if (tense.textContent === '半過去') {
+          return 'nous disions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions dit';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous dirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous disions';
+      } else if (type.textContent === '条件法') {
+        return 'nous dirions';
+      } else if (type.textContent === '命令法') {
+        return 'disons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous dites';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez dit';
+        } else if (tense.textContent === '半過去') {
+          return 'vous disiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez dit';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous direz';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous disiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous diriez';
+      } else if (type.textContent === '命令法') {
+        return 'dites';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils disent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont dit';
+        } else if (tense.textContent === '半過去') {
+          return 'ils disaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient dit';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils diront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils disent';
+      } else if (type.textContent === '条件法') {
+        return 'ils diraient';
+      }
+    }
   } else {
     return 'error';
   }
