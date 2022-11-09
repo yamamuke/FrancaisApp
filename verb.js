@@ -4137,6 +4137,123 @@ function getCorrect() {
         return 'ils diraient';
       }
     }
+  //tomber
+  } else if (verb.textContent === 'tomber') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je tombe';
+        } else if (tense.textContent === '複合過去') {
+          return 'Je suis tombé';
+        } else if (tense.textContent === '半過去') {
+          return 'je tombais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais tombé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je tomberai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je tombe';
+      } else if (type.textContent === '条件法') {
+        return 'je tomberais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu tombes';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es tombé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu tombais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais tombé(';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu tomberas';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu tombes';
+      } else if (type.textContent === '条件法') {
+        return 'tu tomberais';
+      } else if (type.textContent === '命令法') {
+        return 'tombe'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il tombe';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est tombé';
+        } else if (tense.textContent === '半過去') {
+          return 'il tombait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était tombé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il tombera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il tombe';
+      } else if (type.textContent === '条件法') {
+        return 'il tomberait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous tombons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes tombés';
+        } else if (tense.textContent === '半過去') {
+          return 'nous tombions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions tombés';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous tomberons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous tombions';
+      } else if (type.textContent === '条件法') {
+        return 'nous tomberions';
+      } else if (type.textContent === '命令法') {
+        return 'tombons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous tombez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes tombé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous tombiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez tombé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous tomberez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous tombiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous tomberiez';
+      } else if (type.textContent === '命令法') {
+        return 'tombez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils tombent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont tombés';
+        } else if (tense.textContent === '半過去') {
+          return 'ils tombaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient tombés';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils tomberont';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils tombent';
+      } else if (type.textContent === '条件法') {
+        return 'ils tomberaient';
+      }
+    }
   } else {
     return 'error';
   }
