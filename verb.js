@@ -4254,6 +4254,123 @@ function getCorrect() {
         return 'ils tomberaient';
       }
     }
+  //rendre
+  } else if (verb.textContent === 'rendre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je rends';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai rendu';
+        } else if (tense.textContent === '半過去') {
+          return 'je rendais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais rendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je rendrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je rende';
+      } else if (type.textContent === '条件法') {
+        return 'je rendrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu rends';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as rendu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu rendais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais rendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu rendras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu rendes';
+      } else if (type.textContent === '条件法') {
+        return 'tu rendrais';
+      } else if (type.textContent === '命令法') {
+        return 'rends'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il rend';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a rendu';
+        } else if (tense.textContent === '半過去') {
+          return 'il rendait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait rendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il rendra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il rende';
+      } else if (type.textContent === '条件法') {
+        return 'il rendrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous rendons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons rendu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous rendions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions rendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous rendrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous rendions';
+      } else if (type.textContent === '条件法') {
+        return 'nous rendrions';
+      } else if (type.textContent === '命令法') {
+        return 'rendons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous rendez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez rendu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous rendiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez rendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous rendrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous rendiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous rendriez';
+      } else if (type.textContent === '命令法') {
+        return 'rendez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils rendent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont rendu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils rendaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient rendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils rendront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils rendent';
+      } else if (type.textContent === '条件法') {
+        return 'ils rendraient';
+      }
+    }
   } else {
     return 'error';
   }
