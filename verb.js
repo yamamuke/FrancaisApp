@@ -4371,6 +4371,123 @@ function getCorrect() {
         return 'ils rendraient';
       }
     }
+  //suivre
+  } else if (verb.textContent === 'suivre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je suis';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai suivi';
+        } else if (tense.textContent === '半過去') {
+          return 'je suivais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais suivi';
+        } else if (tense.textContent === '単純未来') {
+          return 'je suivrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je suive';
+      } else if (type.textContent === '条件法') {
+        return 'je suivrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu suis';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as suivi';
+        } else if (tense.textContent === '半過去') {
+          return 'tu suivais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais suivi';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu suivras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu suives';
+      } else if (type.textContent === '条件法') {
+        return 'tu suivrais';
+      } else if (type.textContent === '命令法') {
+        return 'suis'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il suit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a suivi';
+        } else if (tense.textContent === '半過去') {
+          return 'il suivait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait suivi';
+        } else if (tense.textContent === '単純未来') {
+          return 'il suivra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il suive';
+      } else if (type.textContent === '条件法') {
+        return 'il suivrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous suivons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons suivi';
+        } else if (tense.textContent === '半過去') {
+          return 'nous suivions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions suivi';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous suivrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous suivions';
+      } else if (type.textContent === '条件法') {
+        return 'nous suivrions';
+      } else if (type.textContent === '命令法') {
+        return 'suivons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous suivez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez suivi';
+        } else if (tense.textContent === '半過去') {
+          return 'vous suiviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez suivi';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous suivrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous suiviez';
+      } else if (type.textContent === '条件法') {
+        return 'vous suivriez';
+      } else if (type.textContent === '命令法') {
+        return 'suivez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils suivent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont suivi';
+        } else if (tense.textContent === '半過去') {
+          return 'ils suivaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient suivi';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils suivront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils suivent';
+      } else if (type.textContent === '条件法') {
+        return 'ils suivraient';
+      }
+    }
   } else {
     return 'error';
   }
