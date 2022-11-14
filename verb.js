@@ -4488,6 +4488,123 @@ function getCorrect() {
         return 'ils suivraient';
       }
     }
+  //sentir
+  } else if (verb.textContent === 'sentir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je sens';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai senti';
+        } else if (tense.textContent === '半過去') {
+          return 'je sentais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais senti';
+        } else if (tense.textContent === '単純未来') {
+          return 'je sentirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je sente';
+      } else if (type.textContent === '条件法') {
+        return 'je sentirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu sens';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as senti';
+        } else if (tense.textContent === '半過去') {
+          return 'tu sentais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais senti';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu sentiras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu sentes';
+      } else if (type.textContent === '条件法') {
+        return 'tu sentirais';
+      } else if (type.textContent === '命令法') {
+        return 'sens'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il sent';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a senti';
+        } else if (tense.textContent === '半過去') {
+          return 'il sentait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait senti';
+        } else if (tense.textContent === '単純未来') {
+          return 'il sentira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il sente';
+      } else if (type.textContent === '条件法') {
+        return 'il sentirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous sentons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons senti';
+        } else if (tense.textContent === '半過去') {
+          return 'nous sentions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions senti';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous sentirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous sentions';
+      } else if (type.textContent === '条件法') {
+        return 'nous sentirions';
+      } else if (type.textContent === '命令法') {
+        return 'sentons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous sentez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez senti';
+        } else if (tense.textContent === '半過去') {
+          return 'vous sentiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez senti';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous sentirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous sentiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous sentiriez';
+      } else if (type.textContent === '命令法') {
+        return 'sentez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils sentent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont senti';
+        } else if (tense.textContent === '半過去') {
+          return 'ils sentaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient senti';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils sentiront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils sentent';
+      } else if (type.textContent === '条件法') {
+        return 'ils sentiraient';
+      }
+    }
   } else {
     return 'error';
   }
