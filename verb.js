@@ -4605,6 +4605,123 @@ function getCorrect() {
         return 'ils sentiraient';
       }
     }
+  //croire
+  } else if (verb.textContent === 'croire') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je crois';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai cru';
+        } else if (tense.textContent === '半過去') {
+          return 'je croyais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais cru';
+        } else if (tense.textContent === '単純未来') {
+          return 'je croirai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je croie';
+      } else if (type.textContent === '条件法') {
+        return 'je croirais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu crois';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as cru';
+        } else if (tense.textContent === '半過去') {
+          return 'tu croyait';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais cru';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu croiras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu croies';
+      } else if (type.textContent === '条件法') {
+        return 'tu croirais';
+      } else if (type.textContent === '命令法') {
+        return 'crois'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il croit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a cru';
+        } else if (tense.textContent === '半過去') {
+          return 'il croyait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait cru';
+        } else if (tense.textContent === '単純未来') {
+          return 'il croira';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il croie';
+      } else if (type.textContent === '条件法') {
+        return 'il croirait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous croyons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons cru';
+        } else if (tense.textContent === '半過去') {
+          return 'nous croyions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions cru';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous croirons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous croyions';
+      } else if (type.textContent === '条件法') {
+        return 'nous croirions';
+      } else if (type.textContent === '命令法') {
+        return 'croyons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous croyez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez cru';
+        } else if (tense.textContent === '半過去') {
+          return 'vous croyiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez cru';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous croirez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous croyiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous croiriez';
+      } else if (type.textContent === '命令法') {
+        return 'croyez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils croient';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont cru';
+        } else if (tense.textContent === '半過去') {
+          return 'ils croyaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient cru';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils croiront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils croient';
+      } else if (type.textContent === '条件法') {
+        return 'ils croiraient';
+      }
+    }
   } else {
     return 'error';
   }
