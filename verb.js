@@ -4144,7 +4144,7 @@ function getCorrect() {
         if (tense.textContent === '現在') {
           return 'je tombe';
         } else if (tense.textContent === '複合過去') {
-          return 'Je suis tombé';
+          return 'je suis tombé';
         } else if (tense.textContent === '半過去') {
           return 'je tombais';
         } else if (tense.textContent === '大過去') {
