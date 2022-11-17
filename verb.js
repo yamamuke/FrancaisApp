@@ -4722,6 +4722,123 @@ function getCorrect() {
         return 'ils croiraient';
       }
     }
+  //vivre
+  } else if (verb.textContent === 'vivre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je vis';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai vécu';
+        } else if (tense.textContent === '半過去') {
+          return 'je vivais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais vécu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je vivrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je vive';
+      } else if (type.textContent === '条件法') {
+        return 'je vivrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu vis';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as vécu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu vivais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais vécu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu vivras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu vives';
+      } else if (type.textContent === '条件法') {
+        return 'tu vivrais';
+      } else if (type.textContent === '命令法') {
+        return 'vis'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il vit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a vécu';
+        } else if (tense.textContent === '半過去') {
+          return 'il vivait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait vécu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il vivra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il vive';
+      } else if (type.textContent === '条件法') {
+        return 'il vivrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous vivons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons vécu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous vivions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions vécu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous vivrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous vivions';
+      } else if (type.textContent === '条件法') {
+        return 'nous vivrions';
+      } else if (type.textContent === '命令法') {
+        return 'vivons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous vivez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez vécu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous viviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez vécu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous vivrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous viviez';
+      } else if (type.textContent === '条件法') {
+        return 'vous vivriez';
+      } else if (type.textContent === '命令法') {
+        return 'vivez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils vivent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont vécu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils vivaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient vécu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils vivront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils vivent';
+      } else if (type.textContent === '条件法') {
+        return 'ils vivraient';
+      }
+    }
   } else {
     return 'error';
   }
