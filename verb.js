@@ -4839,6 +4839,123 @@ function getCorrect() {
         return 'ils vivraient';
       }
     }
+  //entendre
+  } else if (verb.textContent === 'entendre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'j\'entends';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai entendu';
+        } else if (tense.textContent === '半過去') {
+          return 'j\'entendais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais entendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'j\'entendrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que j\'entende';
+      } else if (type.textContent === '条件法') {
+        return 'j\'entendrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu entends';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as entendu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu entendais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais entendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu entendras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu entendes';
+      } else if (type.textContent === '条件法') {
+        return 'tu entendrais';
+      } else if (type.textContent === '命令法') {
+        return 'entends';
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il entend';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a entendu';
+        } else if (tense.textContent === '半過去') {
+          return 'il entendait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait entendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il entendra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il entende';
+      } else if (type.textContent === '条件法') {
+        return 'il entendrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous entendons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons entendu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous entendions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions entendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous entendrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous entendions';
+      } else if (type.textContent === '条件法') {
+        return 'nous entendrions';
+      } else if (type.textContent === '命令法') {
+        return 'entendons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous entendez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez entendu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous entendiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez entendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous entendrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous entendiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous entendriez';
+      } else if (type.textContent === '命令法') {
+        return 'entendez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils entendent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont entendu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils entendaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient entendu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils entendront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils entendent';
+      } else if (type.textContent === '条件法') {
+        return 'ils entendraient';
+      }
+    }
   } else {
     return 'error';
   }
