@@ -4956,6 +4956,123 @@ function getCorrect() {
         return 'ils entendraient';
       }
     }
+  //connaître
+  } else if (verb.textContent === 'connaître') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je connais';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai connu';
+        } else if (tense.textContent === '半過去') {
+          return 'je connaissais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais connu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je connaîtrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je connaisse';
+      } else if (type.textContent === '条件法') {
+        return 'je connaîtrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu connais';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as connu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu connaissais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais connu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu connaîtras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu connaisses';
+      } else if (type.textContent === '条件法') {
+        return 'tu connaîtrais';
+      } else if (type.textContent === '命令法') {
+        return 'connais'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il connaît';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a connu';
+        } else if (tense.textContent === '半過去') {
+          return 'il connaissait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait connu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il connaîtra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il connaisse';
+      } else if (type.textContent === '条件法') {
+        return 'il connaîtrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous connaissons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons connu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous connaissions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions connu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous connaîtrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous connaissions';
+      } else if (type.textContent === '条件法') {
+        return 'nous connaîtrions';
+      } else if (type.textContent === '命令法') {
+        return 'connaissons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous connaissez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez connu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous connaissiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez connu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous connaîtrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous connaissiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous connaîtriez';
+      } else if (type.textContent === '命令法') {
+        return 'connaissez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils connaissent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont connu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils connaissaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient connu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils connaîtront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils connaissent';
+      } else if (type.textContent === '条件法') {
+        return 'ils connaîtraient';
+      }
+    }
   } else {
     return 'error';
   }
