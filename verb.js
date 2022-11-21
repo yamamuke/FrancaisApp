@@ -5073,6 +5073,123 @@ function getCorrect() {
         return 'ils connaîtraient';
       }
     }
+  //revenir
+  } else if (verb.textContent === 'revenir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je reviens';
+        } else if (tense.textContent === '複合過去') {
+          return 'je suis revenu';
+        } else if (tense.textContent === '半過去') {
+          return 'je revenais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais revenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je reviendrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je revienne';
+      } else if (type.textContent === '条件法') {
+        return 'je reviendrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu reviens';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es revenu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu revenais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais revenu(';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu reviendras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu reviennes';
+      } else if (type.textContent === '条件法') {
+        return 'tu reviendrais';
+      } else if (type.textContent === '命令法') {
+        return 'reviens'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il revient';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est revenu';
+        } else if (tense.textContent === '半過去') {
+          return 'il revenait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était revenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il reviendra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il revienne';
+      } else if (type.textContent === '条件法') {
+        return 'il reviendrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous revenons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes revenus';
+        } else if (tense.textContent === '半過去') {
+          return 'nous revenions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions revenus';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous reviendrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous revenions';
+      } else if (type.textContent === '条件法') {
+        return 'nous reviendrions';
+      } else if (type.textContent === '命令法') {
+        return 'revenons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous revenez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes revenu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous reveniez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez revenu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous reviendrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous reveniez';
+      } else if (type.textContent === '条件法') {
+        return 'vous reviendriez';
+      } else if (type.textContent === '命令法') {
+        return 'revenez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils reviennent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont revenus';
+        } else if (tense.textContent === '半過去') {
+          return 'ils revenaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient revenus';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils reviendront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils reviennent';
+      } else if (type.textContent === '条件法') {
+        return 'ils reviendraient';
+      }
+    }
   } else {
     return 'error';
   }
