@@ -5190,6 +5190,123 @@ function getCorrect() {
         return 'ils reviendraient';
       }
     }
+  //comprendre
+  } else if (verb.textContent === 'comprendre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je comprends';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai compris';
+        } else if (tense.textContent === '半過去') {
+          return 'je comprenais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais compris';
+        } else if (tense.textContent === '単純未来') {
+          return 'je comprendrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je comprenne';
+      } else if (type.textContent === '条件法') {
+        return 'je comprendrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu comprends';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as compris';
+        } else if (tense.textContent === '半過去') {
+          return 'tu comprenais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais compris';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu comprendras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu comprennes';
+      } else if (type.textContent === '条件法') {
+        return 'tu comprendrais';
+      } else if (type.textContent === '命令法') {
+        return 'comprends'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il comprend';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a compris';
+        } else if (tense.textContent === '半過去') {
+          return 'il comprenait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait compris';
+        } else if (tense.textContent === '単純未来') {
+          return 'il comprendra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il comprenne';
+      } else if (type.textContent === '条件法') {
+        return 'il comprendrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous comprenons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons compris';
+        } else if (tense.textContent === '半過去') {
+          return 'nous comprenions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions compris';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous comprendrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous comprenions';
+      } else if (type.textContent === '条件法') {
+        return 'nous comprendrions';
+      } else if (type.textContent === '命令法') {
+        return 'comprenons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous comprenez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez compris';
+        } else if (tense.textContent === '半過去') {
+          return 'vous compreniez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez compris';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous comprendrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous compreniez';
+      } else if (type.textContent === '条件法') {
+        return 'vous comprendriez';
+      } else if (type.textContent === '命令法') {
+        return 'comprenez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils comprennent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont compris';
+        } else if (tense.textContent === '半過去') {
+          return 'ils comprenaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient compris';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils comprendront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils comprennent';
+      } else if (type.textContent === '条件法') {
+        return 'ils comprendraient';
+      }
+    }
   } else {
     return 'error';
   }
