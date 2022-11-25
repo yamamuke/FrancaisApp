@@ -5307,6 +5307,123 @@ function getCorrect() {
         return 'ils comprendraient';
       }
     }
+  //sembler
+  } else if (verb.textContent === 'sembler') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je semble';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai semblé';
+        } else if (tense.textContent === '半過去') {
+          return 'je semblais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais semblé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je semblerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je semble';
+      } else if (type.textContent === '条件法') {
+        return 'je semblerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu sembles';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as semblé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu semblais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais semblé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu sembleras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu sembles';
+      } else if (type.textContent === '条件法') {
+        return 'tu semblerais';
+      } else if (type.textContent === '命令法') {
+        return 'semble'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il semble';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a semblé';
+        } else if (tense.textContent === '半過去') {
+          return 'il semblait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait semblé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il semblera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il semble';
+      } else if (type.textContent === '条件法') {
+        return 'il semblerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous semblons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons semblé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous semblions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions semblé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous semblerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous semblions';
+      } else if (type.textContent === '条件法') {
+        return 'nous semblerions';
+      } else if (type.textContent === '命令法') {
+        return 'semblons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous semblez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez semblé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous sembliez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez semblé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous semblerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous sembliez';
+      } else if (type.textContent === '条件法') {
+        return 'vous sembleriez';
+      } else if (type.textContent === '命令法') {
+        return 'semblez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils semblent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont semblé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils semblaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient semblé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils sembleront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils semblent';
+      } else if (type.textContent === '条件法') {
+        return 'ils sembleraient';
+      }
+    }
   } else {
     return 'error';
   }

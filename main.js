@@ -4,11 +4,11 @@ const verbList = [
   'appeler','acheter','créer','lire','mettre','voir','boire','savoir','écrire',
   'rentrer','dormir','partir','ouvrir','apprendre','sortir','vouloir','pouvoir',
   'falloir','tenir','pleuvoir','valoir','dire','tomber','rendre','suivre',
-  'sentir','croire','vivre','entendre','connaître','revenir','comprendre'
+  'sentir','croire','vivre','entendre','connaître','revenir','comprendre',
+  'sembler'
 ];
 const verbList_backup = [
-  'marcher','répondre',
-  'sembler','trouver','donner','aimer','passer',
+  'marcher','répondre','trouver','donner','aimer','passer',
   'demander','laisser','penser'
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
