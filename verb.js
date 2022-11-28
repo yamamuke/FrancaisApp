@@ -5424,6 +5424,123 @@ function getCorrect() {
         return 'ils sembleraient';
       }
     }
+  //laisser
+  } else if (verb.textContent === 'laisser') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je laisse';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai laissé';
+        } else if (tense.textContent === '半過去') {
+          return 'je laissais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais laissé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je laisserai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je laisse';
+      } else if (type.textContent === '条件法') {
+        return 'je laisserais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu laisses';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as laissé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu laissais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais laissé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu laisseras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu laisses';
+      } else if (type.textContent === '条件法') {
+        return 'tu laisserais';
+      } else if (type.textContent === '命令法') {
+        return 'laisse'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il laisse';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a laissé';
+        } else if (tense.textContent === '半過去') {
+          return 'il laissait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait laissé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il laissera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il laisse';
+      } else if (type.textContent === '条件法') {
+        return 'il laisserait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous laissons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons laissé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous laissions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions laissé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous laisserons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous laissions';
+      } else if (type.textContent === '条件法') {
+        return 'nous laisserions';
+      } else if (type.textContent === '命令法') {
+        return 'laissons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous laissez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez laissé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous laissiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez laissé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous laisserez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous laissiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous laisseriez';
+      } else if (type.textContent === '命令法') {
+        return 'laissez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils laissent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont laissé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils laissaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient laissé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils laisseront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils laissent';
+      } else if (type.textContent === '条件法') {
+        return 'ils laisseraient';
+      }
+    }
   } else {
     return 'error';
   }
