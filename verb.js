@@ -5541,6 +5541,123 @@ function getCorrect() {
         return 'ils laisseraient';
       }
     }
+  //répondre
+  } else if (verb.textContent === 'répondre') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je réponds';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai répondu';
+        } else if (tense.textContent === '半過去') {
+          return 'je répondais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais répondu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je répondrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je réponde';
+      } else if (type.textContent === '条件法') {
+        return 'je répondrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu réponds';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as répondu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu répondais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais répondu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu répondras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu répondes';
+      } else if (type.textContent === '条件法') {
+        return 'tu répondrais';
+      } else if (type.textContent === '命令法') {
+        return 'réponds'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il répond';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a répondu';
+        } else if (tense.textContent === '半過去') {
+          return 'il répondait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait répondu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il répondra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il réponde';
+      } else if (type.textContent === '条件法') {
+        return 'il répondrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous répondons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons répondu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous répondions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions répondu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous répondrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous répondions';
+      } else if (type.textContent === '条件法') {
+        return 'nous répondrions';
+      } else if (type.textContent === '命令法') {
+        return 'répondons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous répondez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez répondu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous répondiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez répondu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous répondrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous répondiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous répondriez';
+      } else if (type.textContent === '命令法') {
+        return 'répondez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils répondent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont répondu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils répondaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient répondu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils répondront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils répondent';
+      } else if (type.textContent === '条件法') {
+        return 'ils répondraient';
+      }
+    }
   } else {
     return 'error';
   }
