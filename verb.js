@@ -5658,6 +5658,123 @@ function getCorrect() {
         return 'ils répondraient';
       }
     }
+  //penser
+  } else if (verb.textContent === 'penser') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je pense';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai pensé';
+        } else if (tense.textContent === '半過去') {
+          return 'je pensais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais pensé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je penserai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je pense';
+      } else if (type.textContent === '条件法') {
+        return 'je penserais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu penses';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as pensé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu pensais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais pensé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu penseras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu penses';
+      } else if (type.textContent === '条件法') {
+        return 'tu penserais';
+      } else if (type.textContent === '命令法') {
+        return 'pense'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il pense';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a pensé';
+        } else if (tense.textContent === '半過去') {
+          return 'il pensait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait pensé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il pensera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il pense';
+      } else if (type.textContent === '条件法') {
+        return 'il penserait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous pensons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons pensé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous pensions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions pensé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous penserons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous pensions';
+      } else if (type.textContent === '条件法') {
+        return 'nous penserions';
+      } else if (type.textContent === '命令法') {
+        return 'pensons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous pensez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez pensé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous pensiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez pensé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous penserez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous pensiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous penseriez';
+      } else if (type.textContent === '命令法') {
+        return 'pensez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils pensent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont pensé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils pensaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient pensé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils penseront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils pensent';
+      } else if (type.textContent === '条件法') {
+        return 'ils penseraient';
+      }
+    }
   } else {
     return 'error';
   }
