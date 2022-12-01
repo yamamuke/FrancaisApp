@@ -5775,6 +5775,123 @@ function getCorrect() {
         return 'ils penseraient';
       }
     }
+  //envoyer
+  } else if (verb.textContent === 'envoyer') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'j\'envoie';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai envoyé';
+        } else if (tense.textContent === '半過去') {
+          return 'j\'envoyais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais envoyé';
+        } else if (tense.textContent === '単純未来') {
+          return 'j\'enverrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que j\'envoie';
+      } else if (type.textContent === '条件法') {
+        return 'j\'enverrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu envoies';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as envoyé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu envoyais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais envoyé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu enverras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu envoies';
+      } else if (type.textContent === '条件法') {
+        return 'tu enverrais';
+      } else if (type.textContent === '命令法') {
+        return 'envoie';
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il envoie';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a envoyé';
+        } else if (tense.textContent === '半過去') {
+          return 'il envoyait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait envoyé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il enverra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il envoie';
+      } else if (type.textContent === '条件法') {
+        return 'il enverrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous envoyons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons envoyé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous envoyions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions envoyé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous enverrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous envoyions';
+      } else if (type.textContent === '条件法') {
+        return 'nous enverrions';
+      } else if (type.textContent === '命令法') {
+        return 'envoyons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous envoyez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez envoyé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous envoyiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez envoyé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous enverrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous envoyiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous enverriez';
+      } else if (type.textContent === '命令法') {
+        return 'envoyez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils envoient';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont envoyé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils envoyaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient envoyé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils enverront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils envoient';
+      } else if (type.textContent === '条件法') {
+        return 'ils enverraient';
+      }
+    }
   } else {
     return 'error';
   }
