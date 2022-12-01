@@ -1060,7 +1060,7 @@ function getCorrect() {
         if (tense.textContent === '現在') {
           return 'je reste';
         } else if (tense.textContent === '複合過去') {
-          return 'Je suis resté';
+          return 'je suis resté';
         } else if (tense.textContent === '半過去') {
           return 'je restais';
         } else if (tense.textContent === '大過去') {
@@ -2815,7 +2815,7 @@ function getCorrect() {
         if (tense.textContent === '現在') {
           return 'je rentre';
         } else if (tense.textContent === '複合過去') {
-          return 'Je suis rentré';
+          return 'je suis rentré';
         } else if (tense.textContent === '半過去') {
           return 'je rentrais';
         } else if (tense.textContent === '大過去') {
@@ -3049,7 +3049,7 @@ function getCorrect() {
         if (tense.textContent === '現在') {
           return 'je pars';
         } else if (tense.textContent === '複合過去') {
-          return 'Je suis parti';
+          return 'je suis parti';
         } else if (tense.textContent === '半過去') {
           return 'je partais';
         } else if (tense.textContent === '大過去') {
@@ -3400,7 +3400,7 @@ function getCorrect() {
         if (tense.textContent === '現在') {
           return 'je sors';
         } else if (tense.textContent === '複合過去') {
-          return 'Je suis sorti';
+          return 'je suis sorti';
         } else if (tense.textContent === '半過去') {
           return 'je sortais';
         } else if (tense.textContent === '大過去') {
