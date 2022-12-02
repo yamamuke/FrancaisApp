@@ -5892,6 +5892,123 @@ function getCorrect() {
         return 'ils enverraient';
       }
     }
+  //recevoir
+  } else if (verb.textContent === 'recevoir') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je reçois';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai reçu';
+        } else if (tense.textContent === '半過去') {
+          return 'je recevais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais reçu';
+        } else if (tense.textContent === '単純未来') {
+          return 'je recevrai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je reçoive';
+      } else if (type.textContent === '条件法') {
+        return 'je recevrais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu reçois';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as reçu';
+        } else if (tense.textContent === '半過去') {
+          return 'tu recevais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais reçu';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu recevras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu reçoives';
+      } else if (type.textContent === '条件法') {
+        return 'tu recevrais';
+      } else if (type.textContent === '命令法') {
+        return 'reçois'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il reçoit';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a reçu';
+        } else if (tense.textContent === '半過去') {
+          return 'il recevait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait reçu';
+        } else if (tense.textContent === '単純未来') {
+          return 'il recevra';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il reçoive';
+      } else if (type.textContent === '条件法') {
+        return 'il recevrait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous recevons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons reçu';
+        } else if (tense.textContent === '半過去') {
+          return 'nous recevions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions reçu';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous recevrons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous recevions';
+      } else if (type.textContent === '条件法') {
+        return 'nous recevrions';
+      } else if (type.textContent === '命令法') {
+        return 'recevons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous recevez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez reçu';
+        } else if (tense.textContent === '半過去') {
+          return 'vous receviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez reçu';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous recevrez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous receviez';
+      } else if (type.textContent === '条件法') {
+        return 'vous recevraient';
+      } else if (type.textContent === '命令法') {
+        return 'recevez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils reçoivent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont reçu';
+        } else if (tense.textContent === '半過去') {
+          return 'ils recevaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient reçu';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils recevront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils reçoivent';
+      } else if (type.textContent === '条件法') {
+        return 'ils recevraient';
+      }
+    }
   } else {
     return 'error';
   }

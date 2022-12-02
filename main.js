@@ -5,7 +5,7 @@ const verbList = [
   'rentrer','dormir','partir','ouvrir','apprendre','sortir','vouloir','pouvoir',
   'falloir','tenir','pleuvoir','valoir','dire','tomber','rendre','suivre',
   'sentir','croire','vivre','entendre','connaître','revenir','comprendre',
-  'sembler','laisser','répondre','penser','envoyer'
+  'sembler','laisser','répondre','penser','envoyer','recevoir'
 ];
 const verbList_backup = [
   'marcher','trouver','donner','aimer','passer','demander'
