@@ -6009,6 +6009,123 @@ function getCorrect() {
         return 'ils recevraient';
       }
     }
+  //donner
+  } else if (verb.textContent === 'donner') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je donne';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai donné';
+        } else if (tense.textContent === '半過去') {
+          return 'je donnais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais donné';
+        } else if (tense.textContent === '単純未来') {
+          return 'je donnerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je donne';
+      } else if (type.textContent === '条件法') {
+        return 'je donnerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu donnes';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as donné';
+        } else if (tense.textContent === '半過去') {
+          return 'tu donnais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais donné';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu donneras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu donnes';
+      } else if (type.textContent === '条件法') {
+        return 'tu donnerais';
+      } else if (type.textContent === '命令法') {
+        return 'donne'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il donne';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a donné';
+        } else if (tense.textContent === '半過去') {
+          return 'il donnait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait donné';
+        } else if (tense.textContent === '単純未来') {
+          return 'il donnera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il donne';
+      } else if (type.textContent === '条件法') {
+        return 'il donnerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous donnons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons donné';
+        } else if (tense.textContent === '半過去') {
+          return 'nous donnions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions donné';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous donnerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous donnions';
+      } else if (type.textContent === '条件法') {
+        return 'nous donnerions';
+      } else if (type.textContent === '命令法') {
+        return 'donnons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous donnez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez donné';
+        } else if (tense.textContent === '半過去') {
+          return 'vous donniez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez donné';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous donnerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous donniez';
+      } else if (type.textContent === '条件法') {
+        return 'vous donneriez';
+      } else if (type.textContent === '命令法') {
+        return 'donnez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils donnent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont donné';
+        } else if (tense.textContent === '半過去') {
+          return 'ils donnaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient donné';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils donneront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils donnent';
+      } else if (type.textContent === '条件法') {
+        return 'ils donneraient';
+      }
+    }
   } else {
     return 'error';
   }
