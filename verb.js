@@ -6126,6 +6126,123 @@ function getCorrect() {
         return 'ils donneraient';
       }
     }
+  //marcher
+  } else if (verb.textContent === 'marcher') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je marche';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai marché';
+        } else if (tense.textContent === '半過去') {
+          return 'je marchais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais marché';
+        } else if (tense.textContent === '単純未来') {
+          return 'je marcherai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je marche';
+      } else if (type.textContent === '条件法') {
+        return 'je marcherais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu marches';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as marché';
+        } else if (tense.textContent === '半過去') {
+          return 'tu marchais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais marché';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu marcheras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu marches';
+      } else if (type.textContent === '条件法') {
+        return 'tu marcherais';
+      } else if (type.textContent === '命令法') {
+        return 'marche'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il marche';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a marché';
+        } else if (tense.textContent === '半過去') {
+          return 'il marchait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait marché';
+        } else if (tense.textContent === '単純未来') {
+          return 'il marchera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il marche';
+      } else if (type.textContent === '条件法') {
+        return 'il marcherait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous marchons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons marché';
+        } else if (tense.textContent === '半過去') {
+          return 'nous marchions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions marché';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous marcherons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous marchions';
+      } else if (type.textContent === '条件法') {
+        return 'nous marcherions';
+      } else if (type.textContent === '命令法') {
+        return 'marchons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous marchez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez marché';
+        } else if (tense.textContent === '半過去') {
+          return 'vous marchiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez marché';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous marcherez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous marchiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous marcheriez';
+      } else if (type.textContent === '命令法') {
+        return 'marchez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils marchent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont marché';
+        } else if (tense.textContent === '半過去') {
+          return 'ils marchaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient marché';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils marcheront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils marchent';
+      } else if (type.textContent === '条件法') {
+        return 'ils marcheraient';
+      }
+    }
   } else {
     return 'error';
   }
