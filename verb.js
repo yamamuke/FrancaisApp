@@ -6243,6 +6243,123 @@ function getCorrect() {
         return 'ils marcheraient';
       }
     }
+  //aimer
+  } else if (verb.textContent === 'aimer') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'j\'aime';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai aimé';
+        } else if (tense.textContent === '半過去') {
+          return 'j\'aimais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais aimé';
+        } else if (tense.textContent === '単純未来') {
+          return 'j\'aimerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que j\'aime';
+      } else if (type.textContent === '条件法') {
+        return 'j\'aimerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu aimes';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as aimé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu aimais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais aimé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu aimeras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu aimes';
+      } else if (type.textContent === '条件法') {
+        return 'tu aimerais';
+      } else if (type.textContent === '命令法') {
+        return 'aime';
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il aime';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a aimé';
+        } else if (tense.textContent === '半過去') {
+          return 'il aimait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait aimé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il aimera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il aime';
+      } else if (type.textContent === '条件法') {
+        return 'il aimerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous aimons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons aimé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous aimions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions aimé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous aimerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous aimions';
+      } else if (type.textContent === '条件法') {
+        return 'nous aimerions';
+      } else if (type.textContent === '命令法') {
+        return 'aimons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous aimez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez aimé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous aimiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez aimé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous aimerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous aimiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous aimeriez';
+      } else if (type.textContent === '命令法') {
+        return 'aimez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils aiment';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont aimé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils aimaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient aimé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils aimeront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils aiment';
+      } else if (type.textContent === '条件法') {
+        return 'ils aimeraient';
+      }
+    }
   } else {
     return 'error';
   }
