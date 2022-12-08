@@ -6360,6 +6360,123 @@ function getCorrect() {
         return 'ils aimeraient';
       }
     }
+  //demander
+  } else if (verb.textContent === 'demander') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je demande';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai demandé';
+        } else if (tense.textContent === '半過去') {
+          return 'je demandais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais demandé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je demanderai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je demande';
+      } else if (type.textContent === '条件法') {
+        return 'je demanderais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu demandes';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as demandé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu demandais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais demandé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu demanderas';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu demandes';
+      } else if (type.textContent === '条件法') {
+        return 'tu demanderais';
+      } else if (type.textContent === '命令法') {
+        return 'demande'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il demande';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a demandé';
+        } else if (tense.textContent === '半過去') {
+          return 'il demandait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait demandé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il demandera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il demande';
+      } else if (type.textContent === '条件法') {
+        return 'il demanderait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous demandons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons demandé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous demandions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions demandé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous demanderons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous demandions';
+      } else if (type.textContent === '条件法') {
+        return 'nous demanderions';
+      } else if (type.textContent === '命令法') {
+        return 'demandons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous demandez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez demandé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous demandiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez demandé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous demanderez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous demandiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous demanderiez';
+      } else if (type.textContent === '命令法') {
+        return 'demandez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils demandent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont demandé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils demandaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient demandé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils demanderont';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils demandent';
+      } else if (type.textContent === '条件法') {
+        return 'ils demanderaient';
+      }
+    }
   } else {
     return 'error';
   }
