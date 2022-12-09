@@ -6477,6 +6477,123 @@ function getCorrect() {
         return 'ils demanderaient';
       }
     }
+  //passer
+  } else if (verb.textContent === 'passer(pronominal)') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je passe';
+        } else if (tense.textContent === '複合過去') {
+          return 'je suis passé';
+        } else if (tense.textContent === '半過去') {
+          return 'je passais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'étais passé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je passerai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je passe';
+      } else if (type.textContent === '条件法') {
+        return 'je passerais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu passes';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu es passé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu passais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu étais passé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu passeras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu passes';
+      } else if (type.textContent === '条件法') {
+        return 'tu passerais';
+      } else if (type.textContent === '命令法') {
+        return 'passe'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il passe';
+        } else if (tense.textContent === '複合過去') {
+          return 'il est passé';
+        } else if (tense.textContent === '半過去') {
+          return 'il passait';
+        } else if (tense.textContent === '大過去') {
+          return 'il était passé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il passera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il passe';
+      } else if (type.textContent === '条件法') {
+        return 'il passerait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous passons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous sommes passés';
+        } else if (tense.textContent === '半過去') {
+          return 'nous passions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous étions passés';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous passerons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous passions';
+      } else if (type.textContent === '条件法') {
+        return 'nous passerions';
+      } else if (type.textContent === '命令法') {
+        return 'passons';
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous passez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous êtes passé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous passiez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous étiez passé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous passerez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous passiez';
+      } else if (type.textContent === '条件法') {
+        return 'vous passeriez';
+      } else if (type.textContent === '命令法') {
+        return 'passez';
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils passent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils sont passés';
+        } else if (tense.textContent === '半過去') {
+          return 'ils passaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils étaient passés';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils passeront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils passent';
+      } else if (type.textContent === '条件法') {
+        return 'ils passeraient';
+      }
+    }
   } else {
     return 'error';
   }
