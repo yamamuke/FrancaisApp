@@ -6594,6 +6594,123 @@ function getCorrect() {
         return 'ils passeraient';
       }
     }
+  //trouver
+  } else if (verb.textContent === 'trouver') {
+    if (subject.textContent === 'je') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'je trouve';
+        } else if (tense.textContent === '複合過去') {
+          return 'j\'ai trouvé';
+        } else if (tense.textContent === '半過去') {
+          return 'je trouvais';
+        } else if (tense.textContent === '大過去') {
+          return 'j\'avais trouvé';
+        } else if (tense.textContent === '単純未来') {
+          return 'je trouverai';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que je trouve';
+      } else if (type.textContent === '条件法') {
+        return 'je trouverais';
+      }
+    } else if (subject.textContent === 'tu') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'tu trouves';
+        } else if (tense.textContent === '複合過去') {
+          return 'tu as trouvé';
+        } else if (tense.textContent === '半過去') {
+          return 'tu trouvais';
+        } else if (tense.textContent === '大過去') {
+          return 'tu avais trouvé';
+        } else if (tense.textContent === '単純未来') {
+          return 'tu trouveras';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que tu trouves';
+      } else if (type.textContent === '条件法') {
+        return 'tu trouverais';
+      } else if (type.textContent === '命令法') {
+        return 'trouve'
+      }
+    } else if (subject.textContent === 'il') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'il trouve';
+        } else if (tense.textContent === '複合過去') {
+          return 'il a trouvé';
+        } else if (tense.textContent === '半過去') {
+          return 'il trouvait';
+        } else if (tense.textContent === '大過去') {
+          return 'il avait trouvé';
+        } else if (tense.textContent === '単純未来') {
+          return 'il trouvera';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'il trouve';
+      } else if (type.textContent === '条件法') {
+        return 'il trouverait';
+      }
+    } else if (subject.textContent === 'nous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'nous trouvons';
+        } else if (tense.textContent === '複合過去') {
+          return 'nous avons trouvé';
+        } else if (tense.textContent === '半過去') {
+          return 'nous trouvions';
+        } else if (tense.textContent === '大過去') {
+          return 'nous avions trouvé';
+        } else if (tense.textContent === '単純未来') {
+          return 'nous trouverons';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que nous trouvions';
+      } else if (type.textContent === '条件法') {
+        return 'nous trouverions';
+      } else if (type.textContent === '命令法') {
+        return 'trouvons'
+      }
+    } else if (subject.textContent === 'vous') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'vous trouvez';
+        } else if (tense.textContent === '複合過去') {
+          return 'vous avez trouvé';
+        } else if (tense.textContent === '半過去') {
+          return 'vous trouviez';
+        } else if (tense.textContent === '大過去') {
+          return 'vous aviez trouvé';
+        } else if (tense.textContent === '単純未来') {
+          return 'vous trouverez';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'que vous trouviez';
+      } else if (type.textContent === '条件法') {
+        return 'vous trouveriez';
+      } else if (type.textContent === '命令法') {
+        return 'trouvez'
+      }
+    } else if (subject.textContent === 'ils') {
+      if (type.textContent === '直接法') {
+        if (tense.textContent === '現在') {
+          return 'ils trouvent';
+        } else if (tense.textContent === '複合過去') {
+          return 'ils ont trouvé';
+        } else if (tense.textContent === '半過去') {
+          return 'ils trouvaient';
+        } else if (tense.textContent === '大過去') {
+          return 'ils avaient trouvé';
+        } else if (tense.textContent === '単純未来') {
+          return 'ils trouveront';
+        }
+      } else if (type.textContent === '接続法(queから入力)') {
+        return 'qu\'ils trouvent';
+      } else if (type.textContent === '条件法') {
+        return 'ils trouveraient';
+      }
+    }
   } else {
     return 'error';
   }

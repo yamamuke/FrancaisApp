@@ -6,10 +6,10 @@ const verbList = [
   'falloir','tenir','pleuvoir','valoir','dire','tomber','rendre','suivre',
   'sentir','croire','vivre','entendre','connaître','revenir','comprendre',
   'sembler','laisser','répondre','penser','envoyer','recevoir','donner','marcher',
-  'aimer','demander','passer(pronominal)'
+  'aimer','demander','passer(pronominal)','trouver'
 ];
 const verbList_backup = [
-  'trouver'
+
 ];
 const subjectList = ['je', 'tu', 'il', 'nous', 'vous', 'ils'];
 const subjectList2 = ['tu', 'nous', 'vous'];
