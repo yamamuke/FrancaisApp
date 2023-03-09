@@ -4166,7 +4166,7 @@ function getCorrect() {
         } else if (tense.textContent === '半過去') {
           return 'tu tombais';
         } else if (tense.textContent === '大過去') {
-          return 'tu étais tombé(';
+          return 'tu étais tombé';
         } else if (tense.textContent === '単純未来') {
           return 'tu tomberas';
         }
